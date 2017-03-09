@@ -362,6 +362,10 @@
     </airframe>
   </airframe_group>
   <airframe_group image="VTOLPlane" name="Standard VTOL">
+    <airframe id="13013" maintainer="Nate Bowen &lt;nate_bowen@rocketmail.com&gt;" name="I-TEC RVJET">
+      <maintainer>Nate Bowen &lt;nate_bowen@rocketmail.com&gt;</maintainer>
+      <type>Standard VTOL</type>
+    </airframe>
     <airframe id="13007" maintainer="Sander Smeets &lt;sander@droneslab.com&gt;" name="Generic AAVVT v-tail plane airframe with Quad VTOL.">
       <maintainer>Sander Smeets &lt;sander@droneslab.com&gt;</maintainer>
       <type>Standard VTOL</type>

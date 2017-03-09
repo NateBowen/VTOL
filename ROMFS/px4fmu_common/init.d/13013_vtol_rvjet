@@ -2,6 +2,7 @@
 #
 # @name I-TEC RVJET
 # @type Standard VTOL
+# @maintainer Nate Bowen <nate_bowen@rocketmail.com>
 #
 
 sh /etc/init.d/rc.vtol_defaults

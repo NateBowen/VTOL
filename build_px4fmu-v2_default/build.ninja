@@ -1140,29 +1140,16 @@ build git_cmake_hexagon: phony CMakeFiles/git_cmake_hexagon git_init_cmake_cmake
 build git_jmavsim: phony CMakeFiles/git_jmavsim git_init_Tools_jMAVSim.stamp
 
 #############################################
-# Phony custom command for CMakeFiles/git_ecl
-
-build CMakeFiles/git_ecl: phony git_init_src_lib_ecl.stamp
-
-#############################################
-# Custom command for git_init_src_modules_uavcan_libuavcan.stamp
-
-build git_init_src_modules_uavcan_libuavcan.stamp: CUSTOM_COMMAND ../.gitmodules
-  COMMAND = cd /home/vtol/src/vtol && touch /home/vtol/src/vtol/build_px4fmu-v2_default/git_init_src_modules_uavcan_libuavcan.stamp
-  DESC = Generating git_init_src_modules_uavcan_libuavcan.stamp
-  restat = 1
-
-#############################################
 # Phony custom command for CMakeFiles/nuttx_patch_ctype_cctype_.patch-px4fmu-v2
 
 build CMakeFiles/nuttx_patch_ctype_cctype_.patch-px4fmu-v2: phony px4fmu-v2/NuttX/nuttx_patch_ctype_cctype_.patch-px4fmu-v2.stamp || git_nuttx nuttx_copy_px4fmu-v2
 
 #############################################
-# Custom command for git_init_cmake_cmake_hexagon.stamp
+# Custom command for git_init_src_lib_DriverFramework.stamp
 
-build git_init_cmake_cmake_hexagon.stamp: CUSTOM_COMMAND ../.gitmodules
-  COMMAND = cd /home/vtol/src/vtol && touch /home/vtol/src/vtol/build_px4fmu-v2_default/git_init_cmake_cmake_hexagon.stamp
-  DESC = Generating git_init_cmake_cmake_hexagon.stamp
+build git_init_src_lib_DriverFramework.stamp: CUSTOM_COMMAND ../.gitmodules
+  COMMAND = cd /home/vtol/src/vtol && touch /home/vtol/src/vtol/build_px4fmu-v2_default/git_init_src_lib_DriverFramework.stamp
+  DESC = Generating git_init_src_lib_DriverFramework.stamp
   restat = 1
 
 #############################################
@@ -1197,6 +1184,11 @@ build px4fmu-v2/NuttX/nuttx_patch_c++11.patch-px4fmu-v2.stamp: CUSTOM_COMMAND ..
 build CMakeFiles/nuttx_patch_c++11.patch-px4fmu-v2: phony px4fmu-v2/NuttX/nuttx_patch_c++11.patch-px4fmu-v2.stamp || git_nuttx nuttx_copy_px4fmu-v2
 
 #############################################
+# Phony custom command for CMakeFiles/git_jmavsim
+
+build CMakeFiles/git_jmavsim: phony git_init_Tools_jMAVSim.stamp
+
+#############################################
 # Custom command for git_init_Tools_jMAVSim.stamp
 
 build git_init_Tools_jMAVSim.stamp: CUSTOM_COMMAND ../.gitmodules
@@ -1205,22 +1197,27 @@ build git_init_Tools_jMAVSim.stamp: CUSTOM_COMMAND ../.gitmodules
   restat = 1
 
 #############################################
-# Phony custom command for CMakeFiles/git_jmavsim
+# Custom command for git_init_Tools_gencpp.stamp
 
-build CMakeFiles/git_jmavsim: phony git_init_Tools_jMAVSim.stamp
-
-#############################################
-# Custom command for git_init_Tools_sitl_gazebo.stamp
-
-build git_init_Tools_sitl_gazebo.stamp: CUSTOM_COMMAND ../.gitmodules
-  COMMAND = cd /home/vtol/src/vtol && touch /home/vtol/src/vtol/build_px4fmu-v2_default/git_init_Tools_sitl_gazebo.stamp
-  DESC = Generating git_init_Tools_sitl_gazebo.stamp
+build git_init_Tools_gencpp.stamp: CUSTOM_COMMAND ../.gitmodules
+  COMMAND = cd /home/vtol/src/vtol && touch /home/vtol/src/vtol/build_px4fmu-v2_default/git_init_Tools_gencpp.stamp
+  DESC = Generating git_init_Tools_gencpp.stamp
   restat = 1
 
 #############################################
-# Phony custom command for CMakeFiles/git_genmsg
+# Phony custom command for CMakeFiles/git_gencpp
 
-build CMakeFiles/git_genmsg: phony git_init_Tools_genmsg.stamp
+build CMakeFiles/git_gencpp: phony git_init_Tools_gencpp.stamp
+
+#############################################
+# Phony custom command for CMakeFiles/git_cmake_hexagon
+
+build CMakeFiles/git_cmake_hexagon: phony git_init_cmake_cmake_hexagon.stamp
+
+#############################################
+# Phony custom command for CMakeFiles/git_driverframework
+
+build CMakeFiles/git_driverframework: phony git_init_src_lib_DriverFramework.stamp
 
 #############################################
 # Custom command for git_init_Tools_genmsg.stamp
@@ -1229,6 +1226,11 @@ build git_init_Tools_genmsg.stamp: CUSTOM_COMMAND ../.gitmodules
   COMMAND = cd /home/vtol/src/vtol && touch /home/vtol/src/vtol/build_px4fmu-v2_default/git_init_Tools_genmsg.stamp
   DESC = Generating git_init_Tools_genmsg.stamp
   restat = 1
+
+#############################################
+# Phony custom command for CMakeFiles/git_genmsg
+
+build CMakeFiles/git_genmsg: phony git_init_Tools_genmsg.stamp
 
 #############################################
 # Custom command for git_init_unittests_gtest.stamp
@@ -1242,24 +1244,6 @@ build git_init_unittests_gtest.stamp: CUSTOM_COMMAND ../.gitmodules
 # Phony custom command for CMakeFiles/git_gtest
 
 build CMakeFiles/git_gtest: phony git_init_unittests_gtest.stamp
-
-#############################################
-# Custom command for git_init_src_lib_DriverFramework.stamp
-
-build git_init_src_lib_DriverFramework.stamp: CUSTOM_COMMAND ../.gitmodules
-  COMMAND = cd /home/vtol/src/vtol && touch /home/vtol/src/vtol/build_px4fmu-v2_default/git_init_src_lib_DriverFramework.stamp
-  DESC = Generating git_init_src_lib_DriverFramework.stamp
-  restat = 1
-
-#############################################
-# Phony custom command for CMakeFiles/git_gazebo
-
-build CMakeFiles/git_gazebo: phony git_init_Tools_sitl_gazebo.stamp
-
-#############################################
-# Phony custom command for CMakeFiles/git_gencpp
-
-build CMakeFiles/git_gencpp: phony git_init_Tools_gencpp.stamp
 
 #############################################
 # Custom command for CMakeFiles/Experimental
@@ -1283,17 +1267,22 @@ build CMakeFiles/Continuous: CUSTOM_COMMAND
   pool = console
 
 #############################################
-# Phony custom command for CMakeFiles/git_driverframework
+# Phony custom command for CMakeFiles/git_ecl
 
-build CMakeFiles/git_driverframework: phony git_init_src_lib_DriverFramework.stamp
+build CMakeFiles/git_ecl: phony git_init_src_lib_ecl.stamp
 
 #############################################
-# Custom command for git_init_Tools_gencpp.stamp
+# Custom command for git_init_Tools_sitl_gazebo.stamp
 
-build git_init_Tools_gencpp.stamp: CUSTOM_COMMAND ../.gitmodules
-  COMMAND = cd /home/vtol/src/vtol && touch /home/vtol/src/vtol/build_px4fmu-v2_default/git_init_Tools_gencpp.stamp
-  DESC = Generating git_init_Tools_gencpp.stamp
+build git_init_Tools_sitl_gazebo.stamp: CUSTOM_COMMAND ../.gitmodules
+  COMMAND = cd /home/vtol/src/vtol && touch /home/vtol/src/vtol/build_px4fmu-v2_default/git_init_Tools_sitl_gazebo.stamp
+  DESC = Generating git_init_Tools_sitl_gazebo.stamp
   restat = 1
+
+#############################################
+# Phony custom command for CMakeFiles/git_gazebo
+
+build CMakeFiles/git_gazebo: phony git_init_Tools_sitl_gazebo.stamp
 
 #############################################
 # Custom command for CMakeFiles/NightlyMemoryCheck
@@ -1423,9 +1412,12 @@ build CMakeFiles/ExperimentalSubmit: CUSTOM_COMMAND
   pool = console
 
 #############################################
-# Phony custom command for CMakeFiles/git_cmake_hexagon
+# Custom command for git_init_cmake_cmake_hexagon.stamp
 
-build CMakeFiles/git_cmake_hexagon: phony git_init_cmake_cmake_hexagon.stamp
+build git_init_cmake_cmake_hexagon.stamp: CUSTOM_COMMAND ../.gitmodules
+  COMMAND = cd /home/vtol/src/vtol && touch /home/vtol/src/vtol/build_px4fmu-v2_default/git_init_cmake_cmake_hexagon.stamp
+  DESC = Generating git_init_cmake_cmake_hexagon.stamp
+  restat = 1
 
 #############################################
 # Custom command for CMakeFiles/ContinuousStart
@@ -1539,6 +1531,14 @@ build git_init_NuttX.stamp: CUSTOM_COMMAND ../.gitmodules
 # Phony custom command for CMakeFiles/git_uavcan
 
 build CMakeFiles/git_uavcan: phony git_init_src_modules_uavcan_libuavcan.stamp
+
+#############################################
+# Custom command for git_init_src_modules_uavcan_libuavcan.stamp
+
+build git_init_src_modules_uavcan_libuavcan.stamp: CUSTOM_COMMAND ../.gitmodules
+  COMMAND = cd /home/vtol/src/vtol && touch /home/vtol/src/vtol/build_px4fmu-v2_default/git_init_src_modules_uavcan_libuavcan.stamp
+  DESC = Generating git_init_src_modules_uavcan_libuavcan.stamp
+  restat = 1
 
 #############################################
 # Custom command for CMakeFiles/submodule_clean
@@ -1734,11 +1734,6 @@ build src/modules/uORB/topics/actuator_armed.h src/modules/uORB/topics/actuator_
   restat = 1
 
 #############################################
-# Phony custom command for CMakeFiles/xml_gen
-
-build CMakeFiles/xml_gen: phony parameters.xml airframes.xml
-
-#############################################
 # Custom command for topics_sources/uORBTopics.cpp
 
 build topics_sources/uORBTopics.cpp topics_sources/actuator_armed.cpp topics_sources/actuator_controls.cpp topics_sources/actuator_direct.cpp topics_sources/actuator_outputs.cpp topics_sources/adc_report.cpp topics_sources/airspeed.cpp topics_sources/att_pos_mocap.cpp topics_sources/battery_status.cpp topics_sources/camera_trigger.cpp topics_sources/commander_state.cpp topics_sources/collision_report.cpp topics_sources/control_state.cpp topics_sources/cpuload.cpp topics_sources/debug_key_value.cpp topics_sources/differential_pressure.cpp topics_sources/distance_sensor.cpp topics_sources/ekf2_innovations.cpp topics_sources/ekf2_replay.cpp topics_sources/ekf2_timestamps.cpp topics_sources/esc_report.cpp topics_sources/esc_status.cpp topics_sources/estimator_status.cpp topics_sources/fence.cpp topics_sources/fence_vertex.cpp topics_sources/filtered_bottom_flow.cpp topics_sources/follow_target.cpp topics_sources/fw_pos_ctrl_status.cpp topics_sources/fw_virtual_attitude_setpoint.cpp topics_sources/fw_virtual_rates_setpoint.cpp topics_sources/geofence_result.cpp topics_sources/gps_dump.cpp topics_sources/gps_inject_data.cpp topics_sources/hil_sensor.cpp topics_sources/home_position.cpp topics_sources/input_rc.cpp topics_sources/log_message.cpp topics_sources/manual_control_setpoint.cpp topics_sources/mavlink_log.cpp topics_sources/mc_att_ctrl_status.cpp topics_sources/mc_virtual_attitude_setpoint.cpp topics_sources/mc_virtual_rates_setpoint.cpp topics_sources/mission.cpp topics_sources/mission_result.cpp topics_sources/mount_orientation.cpp topics_sources/multirotor_motor_limits.cpp topics_sources/offboard_control_mode.cpp topics_sources/optical_flow.cpp topics_sources/output_pwm.cpp topics_sources/parameter_update.cpp topics_sources/position_setpoint.cpp topics_sources/position_setpoint_triplet.cpp topics_sources/pwm_input.cpp topics_sources/qshell_req.cpp topics_sources/rc_channels.cpp topics_sources/rc_parameter_map.cpp topics_sources/safety.cpp topics_sources/satellite_info.cpp topics_sources/sensor_accel.cpp topics_sources/sensor_baro.cpp topics_sources/sensor_combined.cpp topics_sources/sensor_correction.cpp topics_sources/sensor_gyro.cpp topics_sources/sensor_mag.cpp topics_sources/sensor_preflight.cpp topics_sources/servorail_status.cpp topics_sources/subsystem_info.cpp topics_sources/system_power.cpp topics_sources/task_stack_info.cpp topics_sources/tecs_status.cpp topics_sources/telemetry_status.cpp topics_sources/test_motor.cpp topics_sources/time_offset.cpp topics_sources/transponder_report.cpp topics_sources/uavcan_parameter_request.cpp topics_sources/uavcan_parameter_value.cpp topics_sources/ulog_stream.cpp topics_sources/ulog_stream_ack.cpp topics_sources/vehicle_attitude.cpp topics_sources/vehicle_attitude_setpoint.cpp topics_sources/vehicle_command_ack.cpp topics_sources/vehicle_command.cpp topics_sources/vehicle_control_mode.cpp topics_sources/vehicle_force_setpoint.cpp topics_sources/vehicle_global_position.cpp topics_sources/vehicle_global_velocity_setpoint.cpp topics_sources/vehicle_gps_position.cpp topics_sources/vehicle_land_detected.cpp topics_sources/vehicle_local_position.cpp topics_sources/vehicle_local_position_setpoint.cpp topics_sources/vehicle_rates_setpoint.cpp topics_sources/vehicle_roi.cpp topics_sources/vehicle_status.cpp topics_sources/vehicle_status_flags.cpp topics_sources/vtol_vehicle_status.cpp topics_sources/wind_estimate.cpp: CUSTOM_COMMAND ../msg/actuator_armed.msg ../msg/actuator_controls.msg ../msg/actuator_direct.msg ../msg/actuator_outputs.msg ../msg/adc_report.msg ../msg/airspeed.msg ../msg/att_pos_mocap.msg ../msg/battery_status.msg ../msg/camera_trigger.msg ../msg/commander_state.msg ../msg/collision_report.msg ../msg/control_state.msg ../msg/cpuload.msg ../msg/debug_key_value.msg ../msg/differential_pressure.msg ../msg/distance_sensor.msg ../msg/ekf2_innovations.msg ../msg/ekf2_replay.msg ../msg/ekf2_timestamps.msg ../msg/esc_report.msg ../msg/esc_status.msg ../msg/estimator_status.msg ../msg/fence.msg ../msg/fence_vertex.msg ../msg/filtered_bottom_flow.msg ../msg/follow_target.msg ../msg/fw_pos_ctrl_status.msg ../msg/fw_virtual_attitude_setpoint.msg ../msg/fw_virtual_rates_setpoint.msg ../msg/geofence_result.msg ../msg/gps_dump.msg ../msg/gps_inject_data.msg ../msg/hil_sensor.msg ../msg/home_position.msg ../msg/input_rc.msg ../msg/log_message.msg ../msg/manual_control_setpoint.msg ../msg/mavlink_log.msg ../msg/mc_att_ctrl_status.msg ../msg/mc_virtual_attitude_setpoint.msg ../msg/mc_virtual_rates_setpoint.msg ../msg/mission.msg ../msg/mission_result.msg ../msg/mount_orientation.msg ../msg/multirotor_motor_limits.msg ../msg/offboard_control_mode.msg ../msg/optical_flow.msg ../msg/output_pwm.msg ../msg/parameter_update.msg ../msg/position_setpoint.msg ../msg/position_setpoint_triplet.msg ../msg/pwm_input.msg ../msg/qshell_req.msg ../msg/rc_channels.msg ../msg/rc_parameter_map.msg ../msg/safety.msg ../msg/satellite_info.msg ../msg/sensor_accel.msg ../msg/sensor_baro.msg ../msg/sensor_combined.msg ../msg/sensor_correction.msg ../msg/sensor_gyro.msg ../msg/sensor_mag.msg ../msg/sensor_preflight.msg ../msg/servorail_status.msg ../msg/subsystem_info.msg ../msg/system_power.msg ../msg/task_stack_info.msg ../msg/tecs_status.msg ../msg/telemetry_status.msg ../msg/test_motor.msg ../msg/time_offset.msg ../msg/transponder_report.msg ../msg/uavcan_parameter_request.msg ../msg/uavcan_parameter_value.msg ../msg/ulog_stream.msg ../msg/ulog_stream_ack.msg ../msg/vehicle_attitude.msg ../msg/vehicle_attitude_setpoint.msg ../msg/vehicle_command_ack.msg ../msg/vehicle_command.msg ../msg/vehicle_control_mode.msg ../msg/vehicle_force_setpoint.msg ../msg/vehicle_global_position.msg ../msg/vehicle_global_velocity_setpoint.msg ../msg/vehicle_gps_position.msg ../msg/vehicle_land_detected.msg ../msg/vehicle_local_position.msg ../msg/vehicle_local_position_setpoint.msg ../msg/vehicle_rates_setpoint.msg ../msg/vehicle_roi.msg ../msg/vehicle_status.msg ../msg/vehicle_status_flags.msg ../msg/vtol_vehicle_status.msg ../msg/wind_estimate.msg || git_gencpp git_genmsg prebuild_targets
@@ -1763,6 +1758,11 @@ build parameters.xml: CUSTOM_COMMAND ../src/drivers/camera_trigger/camera_trigge
   restat = 1
 
 #############################################
+# Phony custom command for CMakeFiles/xml_gen
+
+build CMakeFiles/xml_gen: phony parameters.xml airframes.xml
+
+#############################################
 # Custom command for airframes.xml
 
 build airframes.xml: CUSTOM_COMMAND
@@ -1780,17 +1780,17 @@ build nuttx_copy_px4fmu-v2.stamp: CUSTOM_COMMAND ../nuttx-patches/Fixed-Shadow-w
   restat = 1
 
 #############################################
-# Phony custom command for CMakeFiles/ver_gen
-
-build CMakeFiles/ver_gen: phony build_git_version.h
-
-#############################################
 # Custom command for build_git_version.h
 
 build build_git_version.h: CUSTOM_COMMAND ../Tools/px_update_git_header.py ../.git/index ../.git/HEAD
   COMMAND = cd /home/vtol/src/vtol && /usr/bin/python /home/vtol/src/vtol/Tools/px_update_git_header.py /home/vtol/src/vtol/build_px4fmu-v2_default/build_git_version.h > /home/vtol/src/vtol/build_px4fmu-v2_default/git_header.log
   DESC = Generating git hash header
   restat = 1
+
+#############################################
+# Phony custom command for CMakeFiles/ver_gen
+
+build CMakeFiles/ver_gen: phony build_git_version.h
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
 # /home/vtol/src/vtol/CMakeLists.txt
@@ -5988,20 +5988,15 @@ build src/firmware/nuttx/px4fmu-v2_default.px4 src/firmware/nuttx/firmware_nuttx
   restat = 1
 
 #############################################
-# Phony custom command for src/firmware/nuttx/CMakeFiles/build_firmware_px4fmu-v2
+# Phony custom command for src/firmware/nuttx/CMakeFiles/collect_extras
 
-build src/firmware/nuttx/CMakeFiles/build_firmware_px4fmu-v2: phony src/firmware/nuttx/px4fmu-v2_default.px4 || src/firmware/nuttx/firmware_nuttx
+build src/firmware/nuttx/CMakeFiles/collect_extras: phony src/firmware/nuttx/extras/px4io-v2.bin
 
 #############################################
 # Custom command for src/firmware/nuttx/CMakeFiles/debug
 
 build src/firmware/nuttx/CMakeFiles/debug: CUSTOM_COMMAND src/firmware/nuttx/firmware_nuttx src/firmware/nuttx/.gdbinit || src/firmware/nuttx/firmware_nuttx
   COMMAND = cd /home/vtol/src/vtol/build_px4fmu-v2_default/src/firmware/nuttx && /home/vtol/gcc-arm-none-eabi-5_4-2016q2/bin/arm-none-eabi-gdb /home/vtol/src/vtol/build_px4fmu-v2_default/src/firmware/nuttx/firmware_nuttx
-
-#############################################
-# Phony custom command for src/firmware/nuttx/CMakeFiles/collect_extras
-
-build src/firmware/nuttx/CMakeFiles/collect_extras: phony src/firmware/nuttx/extras/px4io-v2.bin
 
 #############################################
 # Custom command for src/firmware/nuttx/extras/px4io-v2.bin
@@ -6012,22 +6007,15 @@ build src/firmware/nuttx/extras/px4io-v2.bin: CUSTOM_COMMAND src/modules/px4iofi
   restat = 1
 
 #############################################
+# Phony custom command for src/firmware/nuttx/CMakeFiles/build_firmware_px4fmu-v2
+
+build src/firmware/nuttx/CMakeFiles/build_firmware_px4fmu-v2: phony src/firmware/nuttx/px4fmu-v2_default.px4 || src/firmware/nuttx/firmware_nuttx
+
+#############################################
 # Custom command for src/firmware/nuttx/CMakeFiles/debug_tui
 
 build src/firmware/nuttx/CMakeFiles/debug_tui: CUSTOM_COMMAND src/firmware/nuttx/firmware_nuttx src/firmware/nuttx/.gdbinit || src/firmware/nuttx/firmware_nuttx
   COMMAND = cd /home/vtol/src/vtol/build_px4fmu-v2_default/src/firmware/nuttx && GDBTUI-NOTFOUND /home/vtol/src/vtol/build_px4fmu-v2_default/src/firmware/nuttx/firmware_nuttx
-
-#############################################
-# Custom command for src/firmware/nuttx/CMakeFiles/debug_ddd
-
-build src/firmware/nuttx/CMakeFiles/debug_ddd: CUSTOM_COMMAND src/firmware/nuttx/firmware_nuttx src/firmware/nuttx/.gdbinit || src/firmware/nuttx/firmware_nuttx
-  COMMAND = cd /home/vtol/src/vtol/build_px4fmu-v2_default/src/firmware/nuttx && DDD-NOTFOUND --debugger /home/vtol/gcc-arm-none-eabi-5_4-2016q2/bin/arm-none-eabi-gdb /home/vtol/src/vtol/build_px4fmu-v2_default/src/firmware/nuttx/firmware_nuttx
-
-#############################################
-# Custom command for src/firmware/nuttx/CMakeFiles/debug_io
-
-build src/firmware/nuttx/CMakeFiles/debug_io: CUSTOM_COMMAND src/firmware/nuttx/firmware_nuttx src/firmware/nuttx/.gdbinit || src/firmware/nuttx/firmware_nuttx
-  COMMAND = cd /home/vtol/src/vtol/build_px4fmu-v2_default/src/firmware/nuttx && /home/vtol/gcc-arm-none-eabi-5_4-2016q2/bin/arm-none-eabi-gdb /home/vtol/src/vtol/build_px4fmu-v2_default/src/modules/px4iofirmware/px4io-v2
 
 #############################################
 # Custom command for src/firmware/nuttx/CMakeFiles/debug_io_tui
@@ -6042,9 +6030,21 @@ build src/firmware/nuttx/CMakeFiles/debug_io_ddd: CUSTOM_COMMAND src/firmware/nu
   COMMAND = cd /home/vtol/src/vtol/build_px4fmu-v2_default/src/firmware/nuttx && DDD-NOTFOUND --debugger /home/vtol/gcc-arm-none-eabi-5_4-2016q2/bin/arm-none-eabi-gdb /home/vtol/src/vtol/build_px4fmu-v2_default/src/modules/px4iofirmware/px4io-v2
 
 #############################################
+# Custom command for src/firmware/nuttx/CMakeFiles/debug_ddd
+
+build src/firmware/nuttx/CMakeFiles/debug_ddd: CUSTOM_COMMAND src/firmware/nuttx/firmware_nuttx src/firmware/nuttx/.gdbinit || src/firmware/nuttx/firmware_nuttx
+  COMMAND = cd /home/vtol/src/vtol/build_px4fmu-v2_default/src/firmware/nuttx && DDD-NOTFOUND --debugger /home/vtol/gcc-arm-none-eabi-5_4-2016q2/bin/arm-none-eabi-gdb /home/vtol/src/vtol/build_px4fmu-v2_default/src/firmware/nuttx/firmware_nuttx
+
+#############################################
+# Custom command for src/firmware/nuttx/CMakeFiles/debug_io
+
+build src/firmware/nuttx/CMakeFiles/debug_io: CUSTOM_COMMAND src/firmware/nuttx/firmware_nuttx src/firmware/nuttx/.gdbinit || src/firmware/nuttx/firmware_nuttx
+  COMMAND = cd /home/vtol/src/vtol/build_px4fmu-v2_default/src/firmware/nuttx && /home/vtol/gcc-arm-none-eabi-5_4-2016q2/bin/arm-none-eabi-gdb /home/vtol/src/vtol/build_px4fmu-v2_default/src/modules/px4iofirmware/px4io-v2
+
+#############################################
 # Custom command for src/firmware/nuttx/romfs.o
 
-build src/firmware/nuttx/romfs.o: CUSTOM_COMMAND ../ROMFS/px4fmu_common/init.d/1000_rc_fw_easystar.hil ../ROMFS/px4fmu_common/init.d/10015_tbs_discovery ../ROMFS/px4fmu_common/init.d/10016_3dr_iris ../ROMFS/px4fmu_common/init.d/10017_steadidrone_qu4d ../ROMFS/px4fmu_common/init.d/10018_tbs_endurance ../ROMFS/px4fmu_common/init.d/1001_rc_quad_x.hil ../ROMFS/px4fmu_common/init.d/10020_3dr_quad ../ROMFS/px4fmu_common/init.d/10021_H4_680mm ../ROMFS/px4fmu_common/init.d/1003_rc_quad_+.hil ../ROMFS/px4fmu_common/init.d/11001_hexa_cox ../ROMFS/px4fmu_common/init.d/12001_octo_cox ../ROMFS/px4fmu_common/init.d/12002_steadidrone_mavrik ../ROMFS/px4fmu_common/init.d/13001_caipirinha_vtol ../ROMFS/px4fmu_common/init.d/13002_firefly6 ../ROMFS/px4fmu_common/init.d/13003_quad_tailsitter ../ROMFS/px4fmu_common/init.d/13004_quad+_tailsitter ../ROMFS/px4fmu_common/init.d/13005_vtol_AAERT_quad ../ROMFS/px4fmu_common/init.d/13006_vtol_standard_delta ../ROMFS/px4fmu_common/init.d/13007_vtol_AAVVT_quad ../ROMFS/px4fmu_common/init.d/13008_QuadRanger ../ROMFS/px4fmu_common/init.d/13009_vtol_spt_ranger ../ROMFS/px4fmu_common/init.d/13010_claire ../ROMFS/px4fmu_common/init.d/13012_convergence ../ROMFS/px4fmu_common/init.d/14001_tri_y_yaw+ ../ROMFS/px4fmu_common/init.d/14002_tri_y_yaw- ../ROMFS/px4fmu_common/init.d/15001_coax_heli ../ROMFS/px4fmu_common/init.d/16001_helicopter ../ROMFS/px4fmu_common/init.d/20000_snapdragon_rc_pwm ../ROMFS/px4fmu_common/init.d/2100_mpx_easystar ../ROMFS/px4fmu_common/init.d/2101_fw_AERT ../ROMFS/px4fmu_common/init.d/2102_3dr_skywalker ../ROMFS/px4fmu_common/init.d/2103_skyhunter_1800 ../ROMFS/px4fmu_common/init.d/2104_fw_AETR ../ROMFS/px4fmu_common/init.d/2105_maja ../ROMFS/px4fmu_common/init.d/2106_albatross ../ROMFS/px4fmu_common/init.d/3030_io_camflyer ../ROMFS/px4fmu_common/init.d/3031_phantom ../ROMFS/px4fmu_common/init.d/3032_skywalker_x5 ../ROMFS/px4fmu_common/init.d/3033_wingwing ../ROMFS/px4fmu_common/init.d/3034_fx79 ../ROMFS/px4fmu_common/init.d/3035_viper ../ROMFS/px4fmu_common/init.d/3036_pigeon ../ROMFS/px4fmu_common/init.d/3100_tbs_caipirinha ../ROMFS/px4fmu_common/init.d/4001_quad_x ../ROMFS/px4fmu_common/init.d/4002_qavr5 ../ROMFS/px4fmu_common/init.d/4002_quad_x_mount ../ROMFS/px4fmu_common/init.d/4008_ardrone ../ROMFS/px4fmu_common/init.d/4009_qav250 ../ROMFS/px4fmu_common/init.d/4010_dji_f330 ../ROMFS/px4fmu_common/init.d/4011_dji_f450 ../ROMFS/px4fmu_common/init.d/4012_quad_x_can ../ROMFS/px4fmu_common/init.d/4013_bebop ../ROMFS/px4fmu_common/init.d/4020_hk_micro_pcb ../ROMFS/px4fmu_common/init.d/4030_solo ../ROMFS/px4fmu_common/init.d/4040_reaper ../ROMFS/px4fmu_common/init.d/4050_generic_250 ../ROMFS/px4fmu_common/init.d/4051_s250aq ../ROMFS/px4fmu_common/init.d/4060_dji_matrice_100 ../ROMFS/px4fmu_common/init.d/4070_aerofc ../ROMFS/px4fmu_common/init.d/4080_zmr250 ../ROMFS/px4fmu_common/init.d/4900_crazyflie ../ROMFS/px4fmu_common/init.d/50001_axialracing_ax10 ../ROMFS/px4fmu_common/init.d/5001_quad_+ ../ROMFS/px4fmu_common/init.d/6001_hexa_x ../ROMFS/px4fmu_common/init.d/7001_hexa_+ ../ROMFS/px4fmu_common/init.d/8001_octo_x ../ROMFS/px4fmu_common/init.d/9001_octo_+ ../ROMFS/px4fmu_common/init.d/rc.axialracing_ax10_apps ../ROMFS/px4fmu_common/init.d/rc.axialracing_ax10_defaults ../ROMFS/px4fmu_common/init.d/rc.fw_apps ../ROMFS/px4fmu_common/init.d/rc.fw_defaults ../ROMFS/px4fmu_common/init.d/rc.interface ../ROMFS/px4fmu_common/init.d/rc.io ../ROMFS/px4fmu_common/init.d/rc.mc_apps ../ROMFS/px4fmu_common/init.d/rc.mc_defaults ../ROMFS/px4fmu_common/init.d/rc.sensors ../ROMFS/px4fmu_common/init.d/rc.vtol_apps ../ROMFS/px4fmu_common/init.d/rc.vtol_defaults ../ROMFS/px4fmu_common/init.d/rcS ../ROMFS/px4fmu_common/mixers/AAERTWF.main.mix ../ROMFS/px4fmu_common/mixers/AAVVTWFF.main.mix ../ROMFS/px4fmu_common/mixers/AERT.main.mix ../ROMFS/px4fmu_common/mixers/AET.main.mix ../ROMFS/px4fmu_common/mixers/AETR.main.mix ../ROMFS/px4fmu_common/mixers/CCPM.main.mix ../ROMFS/px4fmu_common/mixers/FMU_pass.mix ../ROMFS/px4fmu_common/mixers/FX79.main.mix ../ROMFS/px4fmu_common/mixers/IO_pass.main.mix ../ROMFS/px4fmu_common/mixers/IO_pass.mix ../ROMFS/px4fmu_common/mixers/Q.main.mix ../ROMFS/px4fmu_common/mixers/README.md ../ROMFS/px4fmu_common/mixers/RET.main.mix ../ROMFS/px4fmu_common/mixers/Viper.main.mix ../ROMFS/px4fmu_common/mixers/X5.main.mix ../ROMFS/px4fmu_common/mixers/bebop.main.mix ../ROMFS/px4fmu_common/mixers/blade130.main.mix ../ROMFS/px4fmu_common/mixers/caipi.main.mix ../ROMFS/px4fmu_common/mixers/caipirinha_vtol.main.mix ../ROMFS/px4fmu_common/mixers/claire.aux.mix ../ROMFS/px4fmu_common/mixers/claire.main.mix ../ROMFS/px4fmu_common/mixers/coax.main.mix ../ROMFS/px4fmu_common/mixers/delta.main.mix ../ROMFS/px4fmu_common/mixers/easystar.main.mix ../ROMFS/px4fmu_common/mixers/firefly6.aux.mix ../ROMFS/px4fmu_common/mixers/firefly6.main.mix ../ROMFS/px4fmu_common/mixers/hexa_+.main.mix ../ROMFS/px4fmu_common/mixers/hexa_cox.main.mix ../ROMFS/px4fmu_common/mixers/hexa_x.main.mix ../ROMFS/px4fmu_common/mixers/mount.aux.mix ../ROMFS/px4fmu_common/mixers/mount_legs.aux.mix ../ROMFS/px4fmu_common/mixers/octo_+.main.mix ../ROMFS/px4fmu_common/mixers/octo_cox.main.mix ../ROMFS/px4fmu_common/mixers/octo_cox_w.main.mix ../ROMFS/px4fmu_common/mixers/octo_x.main.mix ../ROMFS/px4fmu_common/mixers/pass.aux.mix ../ROMFS/px4fmu_common/mixers/phantom.main.mix ../ROMFS/px4fmu_common/mixers/quad_+.main.mix ../ROMFS/px4fmu_common/mixers/quad_+_vtol.main.mix ../ROMFS/px4fmu_common/mixers/quad_dc.main.mix ../ROMFS/px4fmu_common/mixers/quad_h.main.mix ../ROMFS/px4fmu_common/mixers/quad_s250aq.main.mix ../ROMFS/px4fmu_common/mixers/quad_w.main.mix ../ROMFS/px4fmu_common/mixers/quad_x.main.mix ../ROMFS/px4fmu_common/mixers/quad_x_vtol.main.mix ../ROMFS/px4fmu_common/mixers/skywalker.main.mix ../ROMFS/px4fmu_common/mixers/tri_y_yaw+.main.mix ../ROMFS/px4fmu_common/mixers/tri_y_yaw-.main.mix ../ROMFS/px4fmu_common/mixers/vtol_AAERT.aux.mix ../ROMFS/px4fmu_common/mixers/vtol_AAVVT.aux.mix ../ROMFS/px4fmu_common/mixers/vtol_convergence.main.mix ../ROMFS/px4fmu_common/mixers/vtol_delta.aux.mix ../ROMFS/px4fmu_common/mixers/vtol_quad_x.main.mix ../ROMFS/px4fmu_common/mixers/wingwing.main.mix ../ROMFS/px4fmu_common/mixers/zmr250.main.mix src/firmware/nuttx/extras/px4io-v2.bin || src/modules/px4iofirmware/fw_io
+build src/firmware/nuttx/romfs.o: CUSTOM_COMMAND ../ROMFS/px4fmu_common/init.d/1000_rc_fw_easystar.hil ../ROMFS/px4fmu_common/init.d/10015_tbs_discovery ../ROMFS/px4fmu_common/init.d/10016_3dr_iris ../ROMFS/px4fmu_common/init.d/10017_steadidrone_qu4d ../ROMFS/px4fmu_common/init.d/10018_tbs_endurance ../ROMFS/px4fmu_common/init.d/1001_rc_quad_x.hil ../ROMFS/px4fmu_common/init.d/10020_3dr_quad ../ROMFS/px4fmu_common/init.d/10021_H4_680mm ../ROMFS/px4fmu_common/init.d/1003_rc_quad_+.hil ../ROMFS/px4fmu_common/init.d/11001_hexa_cox ../ROMFS/px4fmu_common/init.d/12001_octo_cox ../ROMFS/px4fmu_common/init.d/12002_steadidrone_mavrik ../ROMFS/px4fmu_common/init.d/13001_caipirinha_vtol ../ROMFS/px4fmu_common/init.d/13002_firefly6 ../ROMFS/px4fmu_common/init.d/13003_quad_tailsitter ../ROMFS/px4fmu_common/init.d/13004_quad+_tailsitter ../ROMFS/px4fmu_common/init.d/13005_vtol_AAERT_quad ../ROMFS/px4fmu_common/init.d/13006_vtol_standard_delta ../ROMFS/px4fmu_common/init.d/13007_vtol_AAVVT_quad ../ROMFS/px4fmu_common/init.d/13008_QuadRanger ../ROMFS/px4fmu_common/init.d/13009_vtol_spt_ranger ../ROMFS/px4fmu_common/init.d/13010_claire ../ROMFS/px4fmu_common/init.d/13012_convergence ../ROMFS/px4fmu_common/init.d/13013_vtol_rvjet ../ROMFS/px4fmu_common/init.d/14001_tri_y_yaw+ ../ROMFS/px4fmu_common/init.d/14002_tri_y_yaw- ../ROMFS/px4fmu_common/init.d/15001_coax_heli ../ROMFS/px4fmu_common/init.d/16001_helicopter ../ROMFS/px4fmu_common/init.d/20000_snapdragon_rc_pwm ../ROMFS/px4fmu_common/init.d/2100_mpx_easystar ../ROMFS/px4fmu_common/init.d/2101_fw_AERT ../ROMFS/px4fmu_common/init.d/2102_3dr_skywalker ../ROMFS/px4fmu_common/init.d/2103_skyhunter_1800 ../ROMFS/px4fmu_common/init.d/2104_fw_AETR ../ROMFS/px4fmu_common/init.d/2105_maja ../ROMFS/px4fmu_common/init.d/2106_albatross ../ROMFS/px4fmu_common/init.d/3030_io_camflyer ../ROMFS/px4fmu_common/init.d/3031_phantom ../ROMFS/px4fmu_common/init.d/3032_skywalker_x5 ../ROMFS/px4fmu_common/init.d/3033_wingwing ../ROMFS/px4fmu_common/init.d/3034_fx79 ../ROMFS/px4fmu_common/init.d/3035_viper ../ROMFS/px4fmu_common/init.d/3036_pigeon ../ROMFS/px4fmu_common/init.d/3100_tbs_caipirinha ../ROMFS/px4fmu_common/init.d/4001_quad_x ../ROMFS/px4fmu_common/init.d/4002_qavr5 ../ROMFS/px4fmu_common/init.d/4002_quad_x_mount ../ROMFS/px4fmu_common/init.d/4008_ardrone ../ROMFS/px4fmu_common/init.d/4009_qav250 ../ROMFS/px4fmu_common/init.d/4010_dji_f330 ../ROMFS/px4fmu_common/init.d/4011_dji_f450 ../ROMFS/px4fmu_common/init.d/4012_quad_x_can ../ROMFS/px4fmu_common/init.d/4013_bebop ../ROMFS/px4fmu_common/init.d/4020_hk_micro_pcb ../ROMFS/px4fmu_common/init.d/4030_solo ../ROMFS/px4fmu_common/init.d/4040_reaper ../ROMFS/px4fmu_common/init.d/4050_generic_250 ../ROMFS/px4fmu_common/init.d/4051_s250aq ../ROMFS/px4fmu_common/init.d/4060_dji_matrice_100 ../ROMFS/px4fmu_common/init.d/4070_aerofc ../ROMFS/px4fmu_common/init.d/4080_zmr250 ../ROMFS/px4fmu_common/init.d/4900_crazyflie ../ROMFS/px4fmu_common/init.d/50001_axialracing_ax10 ../ROMFS/px4fmu_common/init.d/5001_quad_+ ../ROMFS/px4fmu_common/init.d/6001_hexa_x ../ROMFS/px4fmu_common/init.d/7001_hexa_+ ../ROMFS/px4fmu_common/init.d/8001_octo_x ../ROMFS/px4fmu_common/init.d/9001_octo_+ ../ROMFS/px4fmu_common/init.d/rc.axialracing_ax10_apps ../ROMFS/px4fmu_common/init.d/rc.axialracing_ax10_defaults ../ROMFS/px4fmu_common/init.d/rc.fw_apps ../ROMFS/px4fmu_common/init.d/rc.fw_defaults ../ROMFS/px4fmu_common/init.d/rc.interface ../ROMFS/px4fmu_common/init.d/rc.io ../ROMFS/px4fmu_common/init.d/rc.mc_apps ../ROMFS/px4fmu_common/init.d/rc.mc_defaults ../ROMFS/px4fmu_common/init.d/rc.sensors ../ROMFS/px4fmu_common/init.d/rc.vtol_apps ../ROMFS/px4fmu_common/init.d/rc.vtol_defaults ../ROMFS/px4fmu_common/init.d/rcS ../ROMFS/px4fmu_common/mixers/AAERTWF.main.mix ../ROMFS/px4fmu_common/mixers/AAVVTWFF.main.mix ../ROMFS/px4fmu_common/mixers/AERT.main.mix ../ROMFS/px4fmu_common/mixers/AET.main.mix ../ROMFS/px4fmu_common/mixers/AETR.main.mix ../ROMFS/px4fmu_common/mixers/CCPM.main.mix ../ROMFS/px4fmu_common/mixers/FMU_pass.mix ../ROMFS/px4fmu_common/mixers/FX79.main.mix ../ROMFS/px4fmu_common/mixers/IO_pass.main.mix ../ROMFS/px4fmu_common/mixers/IO_pass.mix ../ROMFS/px4fmu_common/mixers/Q.main.mix ../ROMFS/px4fmu_common/mixers/README.md ../ROMFS/px4fmu_common/mixers/RET.main.mix ../ROMFS/px4fmu_common/mixers/Viper.main.mix ../ROMFS/px4fmu_common/mixers/X5.main.mix ../ROMFS/px4fmu_common/mixers/bebop.main.mix ../ROMFS/px4fmu_common/mixers/blade130.main.mix ../ROMFS/px4fmu_common/mixers/caipi.main.mix ../ROMFS/px4fmu_common/mixers/caipirinha_vtol.main.mix ../ROMFS/px4fmu_common/mixers/claire.aux.mix ../ROMFS/px4fmu_common/mixers/claire.main.mix ../ROMFS/px4fmu_common/mixers/coax.main.mix ../ROMFS/px4fmu_common/mixers/delta.main.mix ../ROMFS/px4fmu_common/mixers/easystar.main.mix ../ROMFS/px4fmu_common/mixers/firefly6.aux.mix ../ROMFS/px4fmu_common/mixers/firefly6.main.mix ../ROMFS/px4fmu_common/mixers/hexa_+.main.mix ../ROMFS/px4fmu_common/mixers/hexa_cox.main.mix ../ROMFS/px4fmu_common/mixers/hexa_x.main.mix ../ROMFS/px4fmu_common/mixers/mount.aux.mix ../ROMFS/px4fmu_common/mixers/mount_legs.aux.mix ../ROMFS/px4fmu_common/mixers/octo_+.main.mix ../ROMFS/px4fmu_common/mixers/octo_cox.main.mix ../ROMFS/px4fmu_common/mixers/octo_cox_w.main.mix ../ROMFS/px4fmu_common/mixers/octo_x.main.mix ../ROMFS/px4fmu_common/mixers/pass.aux.mix ../ROMFS/px4fmu_common/mixers/phantom.main.mix ../ROMFS/px4fmu_common/mixers/quad_+.main.mix ../ROMFS/px4fmu_common/mixers/quad_+_vtol.main.mix ../ROMFS/px4fmu_common/mixers/quad_dc.main.mix ../ROMFS/px4fmu_common/mixers/quad_h.main.mix ../ROMFS/px4fmu_common/mixers/quad_s250aq.main.mix ../ROMFS/px4fmu_common/mixers/quad_w.main.mix ../ROMFS/px4fmu_common/mixers/quad_x.main.mix ../ROMFS/px4fmu_common/mixers/quad_x_vtol.main.mix ../ROMFS/px4fmu_common/mixers/skywalker.main.mix ../ROMFS/px4fmu_common/mixers/tri_y_yaw+.main.mix ../ROMFS/px4fmu_common/mixers/tri_y_yaw-.main.mix ../ROMFS/px4fmu_common/mixers/vtol_AAERT.aux.mix ../ROMFS/px4fmu_common/mixers/vtol_AAVVT.aux.mix ../ROMFS/px4fmu_common/mixers/vtol_convergence.main.mix ../ROMFS/px4fmu_common/mixers/vtol_delta.aux.mix ../ROMFS/px4fmu_common/mixers/vtol_quad_x.main.mix ../ROMFS/px4fmu_common/mixers/wingwing.main.mix ../ROMFS/px4fmu_common/mixers/zmr250.main.mix src/firmware/nuttx/extras/px4io-v2.bin || src/modules/px4iofirmware/fw_io
   COMMAND = cd /home/vtol/src/vtol/build_px4fmu-v2_default/src/firmware/nuttx && cmake -E remove_directory /home/vtol/src/vtol/build_px4fmu-v2_default/tmp/ROMFS/px4fmu_common && cmake -E copy_directory /home/vtol/src/vtol/ROMFS/px4fmu_common /home/vtol/src/vtol/build_px4fmu-v2_default/tmp/ROMFS/px4fmu_common && cmake -E copy_directory /home/vtol/src/vtol/build_px4fmu-v2_default/src/firmware/nuttx/extras /home/vtol/src/vtol/build_px4fmu-v2_default/tmp/ROMFS/px4fmu_common/extras && /usr/bin/python /home/vtol/src/vtol/Tools/px_process_airframes.py -a /home/vtol/src/vtol/build_px4fmu-v2_default/tmp/ROMFS/px4fmu_common/init.d -s /home/vtol/src/vtol/build_px4fmu-v2_default/tmp/ROMFS/px4fmu_common/init.d/rc.autostart --board px4fmu-v2 && /usr/bin/python /home/vtol/src/vtol/Tools/px_romfs_pruner.py --folder /home/vtol/src/vtol/build_px4fmu-v2_default/tmp/ROMFS/px4fmu_common --board px4fmu-v2 && /usr/bin/genromfs -f /home/vtol/src/vtol/build_px4fmu-v2_default/src/firmware/nuttx/romfs.bin -d /home/vtol/src/vtol/build_px4fmu-v2_default/tmp/ROMFS/px4fmu_common -V NSHInitVol && /usr/bin/python /home/vtol/src/vtol/cmake/nuttx/bin_to_obj.py --ld /home/vtol/gcc-arm-none-eabi-5_4-2016q2/bin/arm-none-eabi-ld --c_flags -g\ -std=gnu99\ -fno-common\ -Wall\ -Werror\ -Wextra\ -Wno-sign-compare\ -Wshadow\ -Wfloat-equal\ -Wpointer-arith\ -Wmissing-declarations\ -Wno-unused-parameter\ -Werror=format-security\ -Werror=array-bounds\ -Wfatal-errors\ -Werror=unused-variable\ -Werror=reorder\ -Werror=uninitialized\ -Werror=init-self\ -Werror=unused-but-set-variable\ -Wformat=1\ -Wdouble-promotion\ -Werror=double-promotion\ -Wbad-function-cast\ -Wstrict-prototypes\ -Wmissing-prototypes\ -Wnested-externs\ -fvisibility=hidden\ -include\ visibility.h\ -mcpu=cortex-m4\ -mthumb\ -march=armv7e-m\ -mfpu=fpv4-sp-d16\ -mfloat-abi=hard\ -nodefaultlibs\ -nostdlib\ -Os\ -fno-strict-aliasing\ -fomit-frame-pointer\ -funsafe-math-optimizations\ -ffunction-sections\ -fdata-sections\ -fno-strength-reduce\ -fno-builtin-printf --include_path /home/vtol/src/vtol/src/include --c_compiler /home/vtol/gcc-arm-none-eabi-5_4-2016q2/bin/arm-none-eabi-gcc --nm /home/vtol/gcc-arm-none-eabi-5_4-2016q2/bin/arm-none-eabi-nm --objcopy /home/vtol/gcc-arm-none-eabi-5_4-2016q2/bin/arm-none-eabi-objcopy --obj romfs.o --var romfs_img --bin romfs.bin
   DESC = Generating romfs.o
   restat = 1
@@ -6369,105 +6369,6 @@ build src/modules/px4iofirmware/CMakeFiles/io_prebuild_targets: phony || src/mod
 build src/modules/px4iofirmware/CMakeFiles/nuttx_copy_px4io-v2: phony nuttx_copy_px4io-v2.stamp || git_nuttx
 
 #############################################
-# Custom command for px4io-v2/NuttX/nuttx_patch_Fixed-Shadow-wanings.patch-px4io-v2.stamp
-
-build px4io-v2/NuttX/nuttx_patch_Fixed-Shadow-wanings.patch-px4io-v2.stamp: CUSTOM_COMMAND ../nuttx-patches/Fixed-Shadow-wanings.patch || git_nuttx src/modules/px4iofirmware/nuttx_copy_px4io-v2
-  COMMAND = cd /home/vtol/src/vtol/build_px4fmu-v2_default/src/modules/px4iofirmware && /usr/bin/patch -d /home/vtol/src/vtol/build_px4fmu-v2_default/px4io-v2/NuttX -s -p1 -N < /home/vtol/src/vtol/nuttx-patches/Fixed-Shadow-wanings.patch && /usr/bin/touch /home/vtol/src/vtol/build_px4fmu-v2_default/px4io-v2/NuttX/nuttx_patch_Fixed-Shadow-wanings.patch-px4io-v2.stamp
-  DESC = Applying /home/vtol/src/vtol/nuttx-patches/Fixed-Shadow-wanings.patch
-  restat = 1
-
-#############################################
-# Phony custom command for src/modules/px4iofirmware/CMakeFiles/nuttx_patch_Fixed-Shadow-wanings.patch-px4io-v2
-
-build src/modules/px4iofirmware/CMakeFiles/nuttx_patch_Fixed-Shadow-wanings.patch-px4io-v2: phony px4io-v2/NuttX/nuttx_patch_Fixed-Shadow-wanings.patch-px4io-v2.stamp || git_nuttx src/modules/px4iofirmware/nuttx_copy_px4io-v2
-
-#############################################
-# Custom command for px4io-v2/NuttX/nuttx_patch_c++11.patch-px4io-v2.stamp
-
-build px4io-v2/NuttX/nuttx_patch_c++11.patch-px4io-v2.stamp: CUSTOM_COMMAND ../nuttx-patches/c++11.patch || git_nuttx src/modules/px4iofirmware/nuttx_copy_px4io-v2
-  COMMAND = cd /home/vtol/src/vtol/build_px4fmu-v2_default/src/modules/px4iofirmware && /usr/bin/patch -d /home/vtol/src/vtol/build_px4fmu-v2_default/px4io-v2/NuttX -s -p1 -N < /home/vtol/src/vtol/nuttx-patches/c++11.patch && /usr/bin/touch /home/vtol/src/vtol/build_px4fmu-v2_default/px4io-v2/NuttX/nuttx_patch_c++11.patch-px4io-v2.stamp
-  DESC = Applying /home/vtol/src/vtol/nuttx-patches/c++11.patch
-  restat = 1
-
-#############################################
-# Phony custom command for src/modules/px4iofirmware/CMakeFiles/nuttx_patch_c++11.patch-px4io-v2
-
-build src/modules/px4iofirmware/CMakeFiles/nuttx_patch_c++11.patch-px4io-v2: phony px4io-v2/NuttX/nuttx_patch_c++11.patch-px4io-v2.stamp || git_nuttx src/modules/px4iofirmware/nuttx_copy_px4io-v2
-
-#############################################
-# Custom command for px4io-v2/NuttX/nuttx_patch_ctype_cctype_.patch-px4io-v2.stamp
-
-build px4io-v2/NuttX/nuttx_patch_ctype_cctype_.patch-px4io-v2.stamp: CUSTOM_COMMAND ../nuttx-patches/ctype_cctype_.patch || git_nuttx src/modules/px4iofirmware/nuttx_copy_px4io-v2
-  COMMAND = cd /home/vtol/src/vtol/build_px4fmu-v2_default/src/modules/px4iofirmware && /usr/bin/patch -d /home/vtol/src/vtol/build_px4fmu-v2_default/px4io-v2/NuttX -s -p1 -N < /home/vtol/src/vtol/nuttx-patches/ctype_cctype_.patch && /usr/bin/touch /home/vtol/src/vtol/build_px4fmu-v2_default/px4io-v2/NuttX/nuttx_patch_ctype_cctype_.patch-px4io-v2.stamp
-  DESC = Applying /home/vtol/src/vtol/nuttx-patches/ctype_cctype_.patch
-  restat = 1
-
-#############################################
-# Phony custom command for src/modules/px4iofirmware/CMakeFiles/nuttx_patch_ctype_cctype_.patch-px4io-v2
-
-build src/modules/px4iofirmware/CMakeFiles/nuttx_patch_ctype_cctype_.patch-px4io-v2: phony px4io-v2/NuttX/nuttx_patch_ctype_cctype_.patch-px4io-v2.stamp || git_nuttx src/modules/px4iofirmware/nuttx_copy_px4io-v2
-
-#############################################
-# Custom command for px4io-v2/NuttX/nuttx_patch_export_insitu.patch-px4io-v2.stamp
-
-build px4io-v2/NuttX/nuttx_patch_export_insitu.patch-px4io-v2.stamp: CUSTOM_COMMAND ../nuttx-patches/export_insitu.patch || git_nuttx src/modules/px4iofirmware/nuttx_copy_px4io-v2
-  COMMAND = cd /home/vtol/src/vtol/build_px4fmu-v2_default/src/modules/px4iofirmware && /usr/bin/patch -d /home/vtol/src/vtol/build_px4fmu-v2_default/px4io-v2/NuttX -s -p1 -N < /home/vtol/src/vtol/nuttx-patches/export_insitu.patch && /usr/bin/touch /home/vtol/src/vtol/build_px4fmu-v2_default/px4io-v2/NuttX/nuttx_patch_export_insitu.patch-px4io-v2.stamp
-  DESC = Applying /home/vtol/src/vtol/nuttx-patches/export_insitu.patch
-  restat = 1
-
-#############################################
-# Phony custom command for src/modules/px4iofirmware/CMakeFiles/nuttx_patch_export_insitu.patch-px4io-v2
-
-build src/modules/px4iofirmware/CMakeFiles/nuttx_patch_export_insitu.patch-px4io-v2: phony px4io-v2/NuttX/nuttx_patch_export_insitu.patch-px4io-v2.stamp || git_nuttx src/modules/px4iofirmware/nuttx_copy_px4io-v2
-
-#############################################
-# Phony custom command for src/modules/px4iofirmware/CMakeFiles/nuttx_patch_fixStdint.patch-px4io-v2
-
-build src/modules/px4iofirmware/CMakeFiles/nuttx_patch_fixStdint.patch-px4io-v2: phony px4io-v2/NuttX/nuttx_patch_fixStdint.patch-px4io-v2.stamp || git_nuttx src/modules/px4iofirmware/nuttx_copy_px4io-v2
-
-#############################################
-# Custom command for px4io-v2/NuttX/nuttx_patch_fixStdint.patch-px4io-v2.stamp
-
-build px4io-v2/NuttX/nuttx_patch_fixStdint.patch-px4io-v2.stamp: CUSTOM_COMMAND ../nuttx-patches/fixStdint.patch || git_nuttx src/modules/px4iofirmware/nuttx_copy_px4io-v2
-  COMMAND = cd /home/vtol/src/vtol/build_px4fmu-v2_default/src/modules/px4iofirmware && /usr/bin/patch -d /home/vtol/src/vtol/build_px4fmu-v2_default/px4io-v2/NuttX -s -p1 -N < /home/vtol/src/vtol/nuttx-patches/fixStdint.patch && /usr/bin/touch /home/vtol/src/vtol/build_px4fmu-v2_default/px4io-v2/NuttX/nuttx_patch_fixStdint.patch-px4io-v2.stamp
-  DESC = Applying /home/vtol/src/vtol/nuttx-patches/fixStdint.patch
-  restat = 1
-
-#############################################
-# Custom command for px4io-v2/NuttX/nuttx_patch_fix_CRTSCTS-define.patch-px4io-v2.stamp
-
-build px4io-v2/NuttX/nuttx_patch_fix_CRTSCTS-define.patch-px4io-v2.stamp: CUSTOM_COMMAND ../nuttx-patches/fix_CRTSCTS-define.patch || git_nuttx src/modules/px4iofirmware/nuttx_copy_px4io-v2
-  COMMAND = cd /home/vtol/src/vtol/build_px4fmu-v2_default/src/modules/px4iofirmware && /usr/bin/patch -d /home/vtol/src/vtol/build_px4fmu-v2_default/px4io-v2/NuttX -s -p1 -N < /home/vtol/src/vtol/nuttx-patches/fix_CRTSCTS-define.patch && /usr/bin/touch /home/vtol/src/vtol/build_px4fmu-v2_default/px4io-v2/NuttX/nuttx_patch_fix_CRTSCTS-define.patch-px4io-v2.stamp
-  DESC = Applying /home/vtol/src/vtol/nuttx-patches/fix_CRTSCTS-define.patch
-  restat = 1
-
-#############################################
-# Phony custom command for src/modules/px4iofirmware/CMakeFiles/nuttx_patch_fix_CRTSCTS-define.patch-px4io-v2
-
-build src/modules/px4iofirmware/CMakeFiles/nuttx_patch_fix_CRTSCTS-define.patch-px4io-v2: phony px4io-v2/NuttX/nuttx_patch_fix_CRTSCTS-define.patch-px4io-v2.stamp || git_nuttx src/modules/px4iofirmware/nuttx_copy_px4io-v2
-
-#############################################
-# Custom command for px4io-v2/NuttX/nuttx_patch_math.h.patch-px4io-v2.stamp
-
-build px4io-v2/NuttX/nuttx_patch_math.h.patch-px4io-v2.stamp: CUSTOM_COMMAND ../nuttx-patches/math.h.patch || git_nuttx src/modules/px4iofirmware/nuttx_copy_px4io-v2
-  COMMAND = cd /home/vtol/src/vtol/build_px4fmu-v2_default/src/modules/px4iofirmware && /usr/bin/patch -d /home/vtol/src/vtol/build_px4fmu-v2_default/px4io-v2/NuttX -s -p1 -N < /home/vtol/src/vtol/nuttx-patches/math.h.patch && /usr/bin/touch /home/vtol/src/vtol/build_px4fmu-v2_default/px4io-v2/NuttX/nuttx_patch_math.h.patch-px4io-v2.stamp
-  DESC = Applying /home/vtol/src/vtol/nuttx-patches/math.h.patch
-  restat = 1
-
-#############################################
-# Phony custom command for src/modules/px4iofirmware/CMakeFiles/nuttx_patch_math.h.patch-px4io-v2
-
-build src/modules/px4iofirmware/CMakeFiles/nuttx_patch_math.h.patch-px4io-v2: phony px4io-v2/NuttX/nuttx_patch_math.h.patch-px4io-v2.stamp || git_nuttx src/modules/px4iofirmware/nuttx_copy_px4io-v2
-
-#############################################
-# Custom command for px4io-v2/NuttX/nuttx_patch_nsh_parse.patch-px4io-v2.stamp
-
-build px4io-v2/NuttX/nuttx_patch_nsh_parse.patch-px4io-v2.stamp: CUSTOM_COMMAND ../nuttx-patches/nsh_parse.patch || git_nuttx src/modules/px4iofirmware/nuttx_copy_px4io-v2
-  COMMAND = cd /home/vtol/src/vtol/build_px4fmu-v2_default/src/modules/px4iofirmware && /usr/bin/patch -d /home/vtol/src/vtol/build_px4fmu-v2_default/px4io-v2/NuttX -s -p1 -N < /home/vtol/src/vtol/nuttx-patches/nsh_parse.patch && /usr/bin/touch /home/vtol/src/vtol/build_px4fmu-v2_default/px4io-v2/NuttX/nuttx_patch_nsh_parse.patch-px4io-v2.stamp
-  DESC = Applying /home/vtol/src/vtol/nuttx-patches/nsh_parse.patch
-  restat = 1
-
-#############################################
 # Phony custom command for src/modules/px4iofirmware/CMakeFiles/nuttx_patch_nsh_parse.patch-px4io-v2
 
 build src/modules/px4iofirmware/CMakeFiles/nuttx_patch_nsh_parse.patch-px4io-v2: phony px4io-v2/NuttX/nuttx_patch_nsh_parse.patch-px4io-v2.stamp || git_nuttx src/modules/px4iofirmware/nuttx_copy_px4io-v2
@@ -6549,17 +6450,22 @@ build src/modules/px4iofirmware/CMakeFiles/menuconfig_px4io-v2: CUSTOM_COMMAND p
   pool = console
 
 #############################################
-# Phony custom command for src/modules/px4iofirmware/CMakeFiles/nuttx_export_px4io-v2
-
-build src/modules/px4iofirmware/CMakeFiles/nuttx_export_px4io-v2: phony px4io-v2/NuttX/nuttx/nuttx-export/include/nuttx/config.h || git_nuttx src/modules/px4iofirmware/nuttx_patch_px4io-v2
-
-#############################################
 # Custom command for px4io-v2/NuttX/nuttx/nuttx-export/include/nuttx/config.h
 
 build px4io-v2/NuttX/nuttx/nuttx-export/include/nuttx/config.h: CUSTOM_COMMAND px4io-v2/NuttX/nuttx/.config || git_nuttx src/modules/px4iofirmware/nuttx_patch_px4io-v2
   COMMAND = cd /home/vtol/src/vtol/build_px4fmu-v2_default && /bin/rm -rf /home/vtol/src/vtol/build_px4fmu-v2_default/px4io-v2/NuttX/nuttx/nuttx-export && /usr/bin/make --no-print-directory --quiet -C /home/vtol/src/vtol/build_px4fmu-v2_default/px4io-v2/NuttX/nuttx -r CONFIG_ARCH_BOARD=px4io-v2 export > nuttx_build.log
   DESC = Building NuttX for px4io-v2 with nsh
   restat = 1
+
+#############################################
+# Phony custom command for src/modules/px4iofirmware/CMakeFiles/nuttx_export_px4io-v2
+
+build src/modules/px4iofirmware/CMakeFiles/nuttx_export_px4io-v2: phony px4io-v2/NuttX/nuttx/nuttx-export/include/nuttx/config.h || git_nuttx src/modules/px4iofirmware/nuttx_patch_px4io-v2
+
+#############################################
+# Phony custom command for src/modules/px4iofirmware/CMakeFiles/fw_io
+
+build src/modules/px4iofirmware/CMakeFiles/fw_io: phony src/modules/px4iofirmware/px4io-v2.bin || src/modules/px4iofirmware/px4io-v2
 
 #############################################
 # Custom command for src/modules/px4iofirmware/px4io-v2.bin
@@ -6570,9 +6476,103 @@ build src/modules/px4iofirmware/px4io-v2.bin: CUSTOM_COMMAND src/modules/px4iofi
   restat = 1
 
 #############################################
-# Phony custom command for src/modules/px4iofirmware/CMakeFiles/fw_io
+# Custom command for px4io-v2/NuttX/nuttx_patch_Fixed-Shadow-wanings.patch-px4io-v2.stamp
 
-build src/modules/px4iofirmware/CMakeFiles/fw_io: phony src/modules/px4iofirmware/px4io-v2.bin || src/modules/px4iofirmware/px4io-v2
+build px4io-v2/NuttX/nuttx_patch_Fixed-Shadow-wanings.patch-px4io-v2.stamp: CUSTOM_COMMAND ../nuttx-patches/Fixed-Shadow-wanings.patch || git_nuttx src/modules/px4iofirmware/nuttx_copy_px4io-v2
+  COMMAND = cd /home/vtol/src/vtol/build_px4fmu-v2_default/src/modules/px4iofirmware && /usr/bin/patch -d /home/vtol/src/vtol/build_px4fmu-v2_default/px4io-v2/NuttX -s -p1 -N < /home/vtol/src/vtol/nuttx-patches/Fixed-Shadow-wanings.patch && /usr/bin/touch /home/vtol/src/vtol/build_px4fmu-v2_default/px4io-v2/NuttX/nuttx_patch_Fixed-Shadow-wanings.patch-px4io-v2.stamp
+  DESC = Applying /home/vtol/src/vtol/nuttx-patches/Fixed-Shadow-wanings.patch
+  restat = 1
+
+#############################################
+# Phony custom command for src/modules/px4iofirmware/CMakeFiles/nuttx_patch_Fixed-Shadow-wanings.patch-px4io-v2
+
+build src/modules/px4iofirmware/CMakeFiles/nuttx_patch_Fixed-Shadow-wanings.patch-px4io-v2: phony px4io-v2/NuttX/nuttx_patch_Fixed-Shadow-wanings.patch-px4io-v2.stamp || git_nuttx src/modules/px4iofirmware/nuttx_copy_px4io-v2
+
+#############################################
+# Custom command for px4io-v2/NuttX/nuttx_patch_c++11.patch-px4io-v2.stamp
+
+build px4io-v2/NuttX/nuttx_patch_c++11.patch-px4io-v2.stamp: CUSTOM_COMMAND ../nuttx-patches/c++11.patch || git_nuttx src/modules/px4iofirmware/nuttx_copy_px4io-v2
+  COMMAND = cd /home/vtol/src/vtol/build_px4fmu-v2_default/src/modules/px4iofirmware && /usr/bin/patch -d /home/vtol/src/vtol/build_px4fmu-v2_default/px4io-v2/NuttX -s -p1 -N < /home/vtol/src/vtol/nuttx-patches/c++11.patch && /usr/bin/touch /home/vtol/src/vtol/build_px4fmu-v2_default/px4io-v2/NuttX/nuttx_patch_c++11.patch-px4io-v2.stamp
+  DESC = Applying /home/vtol/src/vtol/nuttx-patches/c++11.patch
+  restat = 1
+
+#############################################
+# Phony custom command for src/modules/px4iofirmware/CMakeFiles/nuttx_patch_c++11.patch-px4io-v2
+
+build src/modules/px4iofirmware/CMakeFiles/nuttx_patch_c++11.patch-px4io-v2: phony px4io-v2/NuttX/nuttx_patch_c++11.patch-px4io-v2.stamp || git_nuttx src/modules/px4iofirmware/nuttx_copy_px4io-v2
+
+#############################################
+# Custom command for px4io-v2/NuttX/nuttx_patch_ctype_cctype_.patch-px4io-v2.stamp
+
+build px4io-v2/NuttX/nuttx_patch_ctype_cctype_.patch-px4io-v2.stamp: CUSTOM_COMMAND ../nuttx-patches/ctype_cctype_.patch || git_nuttx src/modules/px4iofirmware/nuttx_copy_px4io-v2
+  COMMAND = cd /home/vtol/src/vtol/build_px4fmu-v2_default/src/modules/px4iofirmware && /usr/bin/patch -d /home/vtol/src/vtol/build_px4fmu-v2_default/px4io-v2/NuttX -s -p1 -N < /home/vtol/src/vtol/nuttx-patches/ctype_cctype_.patch && /usr/bin/touch /home/vtol/src/vtol/build_px4fmu-v2_default/px4io-v2/NuttX/nuttx_patch_ctype_cctype_.patch-px4io-v2.stamp
+  DESC = Applying /home/vtol/src/vtol/nuttx-patches/ctype_cctype_.patch
+  restat = 1
+
+#############################################
+# Phony custom command for src/modules/px4iofirmware/CMakeFiles/nuttx_patch_ctype_cctype_.patch-px4io-v2
+
+build src/modules/px4iofirmware/CMakeFiles/nuttx_patch_ctype_cctype_.patch-px4io-v2: phony px4io-v2/NuttX/nuttx_patch_ctype_cctype_.patch-px4io-v2.stamp || git_nuttx src/modules/px4iofirmware/nuttx_copy_px4io-v2
+
+#############################################
+# Custom command for px4io-v2/NuttX/nuttx_patch_export_insitu.patch-px4io-v2.stamp
+
+build px4io-v2/NuttX/nuttx_patch_export_insitu.patch-px4io-v2.stamp: CUSTOM_COMMAND ../nuttx-patches/export_insitu.patch || git_nuttx src/modules/px4iofirmware/nuttx_copy_px4io-v2
+  COMMAND = cd /home/vtol/src/vtol/build_px4fmu-v2_default/src/modules/px4iofirmware && /usr/bin/patch -d /home/vtol/src/vtol/build_px4fmu-v2_default/px4io-v2/NuttX -s -p1 -N < /home/vtol/src/vtol/nuttx-patches/export_insitu.patch && /usr/bin/touch /home/vtol/src/vtol/build_px4fmu-v2_default/px4io-v2/NuttX/nuttx_patch_export_insitu.patch-px4io-v2.stamp
+  DESC = Applying /home/vtol/src/vtol/nuttx-patches/export_insitu.patch
+  restat = 1
+
+#############################################
+# Phony custom command for src/modules/px4iofirmware/CMakeFiles/nuttx_patch_export_insitu.patch-px4io-v2
+
+build src/modules/px4iofirmware/CMakeFiles/nuttx_patch_export_insitu.patch-px4io-v2: phony px4io-v2/NuttX/nuttx_patch_export_insitu.patch-px4io-v2.stamp || git_nuttx src/modules/px4iofirmware/nuttx_copy_px4io-v2
+
+#############################################
+# Custom command for px4io-v2/NuttX/nuttx_patch_fixStdint.patch-px4io-v2.stamp
+
+build px4io-v2/NuttX/nuttx_patch_fixStdint.patch-px4io-v2.stamp: CUSTOM_COMMAND ../nuttx-patches/fixStdint.patch || git_nuttx src/modules/px4iofirmware/nuttx_copy_px4io-v2
+  COMMAND = cd /home/vtol/src/vtol/build_px4fmu-v2_default/src/modules/px4iofirmware && /usr/bin/patch -d /home/vtol/src/vtol/build_px4fmu-v2_default/px4io-v2/NuttX -s -p1 -N < /home/vtol/src/vtol/nuttx-patches/fixStdint.patch && /usr/bin/touch /home/vtol/src/vtol/build_px4fmu-v2_default/px4io-v2/NuttX/nuttx_patch_fixStdint.patch-px4io-v2.stamp
+  DESC = Applying /home/vtol/src/vtol/nuttx-patches/fixStdint.patch
+  restat = 1
+
+#############################################
+# Phony custom command for src/modules/px4iofirmware/CMakeFiles/nuttx_patch_fixStdint.patch-px4io-v2
+
+build src/modules/px4iofirmware/CMakeFiles/nuttx_patch_fixStdint.patch-px4io-v2: phony px4io-v2/NuttX/nuttx_patch_fixStdint.patch-px4io-v2.stamp || git_nuttx src/modules/px4iofirmware/nuttx_copy_px4io-v2
+
+#############################################
+# Custom command for px4io-v2/NuttX/nuttx_patch_fix_CRTSCTS-define.patch-px4io-v2.stamp
+
+build px4io-v2/NuttX/nuttx_patch_fix_CRTSCTS-define.patch-px4io-v2.stamp: CUSTOM_COMMAND ../nuttx-patches/fix_CRTSCTS-define.patch || git_nuttx src/modules/px4iofirmware/nuttx_copy_px4io-v2
+  COMMAND = cd /home/vtol/src/vtol/build_px4fmu-v2_default/src/modules/px4iofirmware && /usr/bin/patch -d /home/vtol/src/vtol/build_px4fmu-v2_default/px4io-v2/NuttX -s -p1 -N < /home/vtol/src/vtol/nuttx-patches/fix_CRTSCTS-define.patch && /usr/bin/touch /home/vtol/src/vtol/build_px4fmu-v2_default/px4io-v2/NuttX/nuttx_patch_fix_CRTSCTS-define.patch-px4io-v2.stamp
+  DESC = Applying /home/vtol/src/vtol/nuttx-patches/fix_CRTSCTS-define.patch
+  restat = 1
+
+#############################################
+# Phony custom command for src/modules/px4iofirmware/CMakeFiles/nuttx_patch_fix_CRTSCTS-define.patch-px4io-v2
+
+build src/modules/px4iofirmware/CMakeFiles/nuttx_patch_fix_CRTSCTS-define.patch-px4io-v2: phony px4io-v2/NuttX/nuttx_patch_fix_CRTSCTS-define.patch-px4io-v2.stamp || git_nuttx src/modules/px4iofirmware/nuttx_copy_px4io-v2
+
+#############################################
+# Custom command for px4io-v2/NuttX/nuttx_patch_math.h.patch-px4io-v2.stamp
+
+build px4io-v2/NuttX/nuttx_patch_math.h.patch-px4io-v2.stamp: CUSTOM_COMMAND ../nuttx-patches/math.h.patch || git_nuttx src/modules/px4iofirmware/nuttx_copy_px4io-v2
+  COMMAND = cd /home/vtol/src/vtol/build_px4fmu-v2_default/src/modules/px4iofirmware && /usr/bin/patch -d /home/vtol/src/vtol/build_px4fmu-v2_default/px4io-v2/NuttX -s -p1 -N < /home/vtol/src/vtol/nuttx-patches/math.h.patch && /usr/bin/touch /home/vtol/src/vtol/build_px4fmu-v2_default/px4io-v2/NuttX/nuttx_patch_math.h.patch-px4io-v2.stamp
+  DESC = Applying /home/vtol/src/vtol/nuttx-patches/math.h.patch
+  restat = 1
+
+#############################################
+# Phony custom command for src/modules/px4iofirmware/CMakeFiles/nuttx_patch_math.h.patch-px4io-v2
+
+build src/modules/px4iofirmware/CMakeFiles/nuttx_patch_math.h.patch-px4io-v2: phony px4io-v2/NuttX/nuttx_patch_math.h.patch-px4io-v2.stamp || git_nuttx src/modules/px4iofirmware/nuttx_copy_px4io-v2
+
+#############################################
+# Custom command for px4io-v2/NuttX/nuttx_patch_nsh_parse.patch-px4io-v2.stamp
+
+build px4io-v2/NuttX/nuttx_patch_nsh_parse.patch-px4io-v2.stamp: CUSTOM_COMMAND ../nuttx-patches/nsh_parse.patch || git_nuttx src/modules/px4iofirmware/nuttx_copy_px4io-v2
+  COMMAND = cd /home/vtol/src/vtol/build_px4fmu-v2_default/src/modules/px4iofirmware && /usr/bin/patch -d /home/vtol/src/vtol/build_px4fmu-v2_default/px4io-v2/NuttX -s -p1 -N < /home/vtol/src/vtol/nuttx-patches/nsh_parse.patch && /usr/bin/touch /home/vtol/src/vtol/build_px4fmu-v2_default/px4io-v2/NuttX/nuttx_patch_nsh_parse.patch-px4io-v2.stamp
+  DESC = Applying /home/vtol/src/vtol/nuttx-patches/nsh_parse.patch
+  restat = 1
 
 #############################################
 # Custom command for nuttx_copy_px4io-v2.stamp
