@@ -24,7 +24,10 @@ Packages/*
 s3deploy-branch/
 s3deploy-archive/
 build/*
-build_*/
+
+#Don't ignore the firmware build
+#build_*/
+
 core
 cscope.out
 cscope.in.out
