@@ -73,6 +73,8 @@ then
     param set PWM_MAIN_REV1   1
     param set PWM_MAIN_REV2   1
 
+    param set PWM_RATE  100
+
     param set PWM_AUX_REV1    1
     param set PWM_AUX_REV2    1
     param set PWM_AUX_REV3    1
@@ -81,7 +83,6 @@ fi
 
 set MIXER vtol_rvjet_y4
 set PWM_OUT 1234
-set PWM_RATE 100
 
 set MIXER_AUX vtol_delta
 set PWM_ACHDIS 5
