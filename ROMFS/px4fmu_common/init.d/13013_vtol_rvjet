@@ -30,18 +30,18 @@ then
     param set FW_RR_P 0.04
     param set FW_R_RMAX   40.0
 
-    param set MC_PITCHRATE_D  0.004
-    param set MC_PITCHRATE_I  0.0
-    param set MC_PITCHRATE_MAX    60.0
-    param set MC_PITCHRATE_P  0.21
-    param set MC_PITCH_P  4.0
-    param set MC_ROLLRATE_D   0.004
-    param set MC_ROLLRATE_I   0.002
-    param set MC_ROLLRATE_MAX 60.0
-    param set MC_ROLLRATE_P   0.24
-    param set MC_ROLL_P   4.0
+    param set MC_PITCHRATE_D  2250.80927035929
+    param set MC_PITCHRATE_I  3.94267448997218
+    param set MC_PITCHRATE_MAX    40
+    param set MC_PITCHRATE_P  199.855006613454
+    param set MC_PITCH_P  -0.00220807683365121
+    param set MC_ROLLRATE_D   0
+    param set MC_ROLLRATE_I   -57.4637145166882
+    param set MC_ROLLRATE_MAX 40
+    param set MC_ROLLRATE_P   -0.0718296431458602
+    param set MC_ROLL_P   -0.00220807683365121
     param set MC_YAWRATE_I    0.02
-    param set MC_YAWRATE_MAX  40.0
+    param set MC_YAWRATE_MAX  40
     param set MC_YAWRATE_P    0.18
     param set MC_YAWRATE_MAX  40.0
     param set MC_YAWRAUTO_MAX 40.0
@@ -79,9 +79,9 @@ then
     param set PWM_AUX_REV4    1
 fi
 
-set MIXER vtol_quad_x
+set MIXER vtol_rvjet_y4
 set PWM_OUT 1234
-set PWM_RATE 400
+set PWM_RATE 100
 
 set MIXER_AUX vtol_delta
 set PWM_ACHDIS 5
