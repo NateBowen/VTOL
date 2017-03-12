@@ -5,7 +5,6 @@
 # @maintainer Nate Bowen <nate_bowen@rocketmail.com>
 #
 
-sh /etc/init.d/rc.vtol_defaults
 
 if [ $AUTOCNF == yes ]
 then
