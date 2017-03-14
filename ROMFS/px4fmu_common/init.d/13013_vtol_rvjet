@@ -91,7 +91,8 @@ then
     param set PWM_AUX_REV4    1
 fi
 
-set MIXER vtol_rvjet_y4
+#set MIXER vtol_rvjet_y4
+set MIXER quad_x
 set PWM_OUT 1234
 
 set MIXER_AUX vtol_delta
