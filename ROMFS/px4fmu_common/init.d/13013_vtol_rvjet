@@ -89,6 +89,9 @@ then
     param set PWM_AUX_REV2    1
     param set PWM_AUX_REV3    1
     param set PWM_AUX_REV4    1
+
+    param set PWM_MIN 950
+
 fi
 
 #set MIXER vtol_rvjet_y4
