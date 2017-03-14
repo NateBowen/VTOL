@@ -1,1 +1,1 @@
-const unsigned int romfs_img_len = 0x00020400;
+const unsigned int romfs_img_len = 0x00020800;

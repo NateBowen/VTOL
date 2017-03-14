@@ -1459,6 +1459,25 @@ rule CXX_STATIC_LIBRARY_LINKER__lib__launchdetection
 #############################################
 # Rule for compiling CXX files.
 
+rule CXX_COMPILER__lib__led
+  depfile = $DEP_FILE
+  deps = gcc
+  command = /home/vtol/gcc-arm-none-eabi-5_4-2016q2/bin/arm-none-eabi-g++   $DEFINES $INCLUDES $FLAGS -MMD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for linking CXX static library.
+
+rule CXX_STATIC_LIBRARY_LINKER__lib__led
+  command = $PRE_LINK && /usr/bin/cmake -E remove $TARGET_FILE && /home/vtol/gcc-arm-none-eabi-5_4-2016q2/bin/arm-none-eabi-ar qc $TARGET_FILE $LINK_FLAGS $in && /home/vtol/gcc-arm-none-eabi-5_4-2016q2/bin/arm-none-eabi-ranlib $TARGET_FILE && $POST_BUILD
+  description = Linking CXX static library $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling CXX files.
+
 rule CXX_COMPILER__lib__terrain_estimation
   depfile = $DEP_FILE
   deps = gcc

@@ -2354,6 +2354,7 @@ but also ignore less noise</short_desc>
       <long_desc>When controlling manually the throttle stick value (0 to 1) has to be bellow this threshold in order to pass the check for landing. So if set to 1 it's allowed to land with any stick position.</long_desc>
       <min>0</min>
       <max>1</max>
+      <unit>norm</unit>
       <decimal>2</decimal>
       <scope>modules/land_detector</scope>
     </parameter>
@@ -2362,6 +2363,7 @@ but also ignore less noise</short_desc>
       <long_desc>When controlling manually in position mode the throttle stick value (0 to 1) has to get above this threshold after arming in order to take off.</long_desc>
       <min>0</min>
       <max>1</max>
+      <unit>norm</unit>
       <decimal>2</decimal>
       <scope>modules/land_detector</scope>
     </parameter>

@@ -50,7 +50,7 @@ SET(CPACK_PACKAGE_CONTACT "px4users@googlegroups.com")
 SET(CPACK_PACKAGE_DEFAULT_LOCATION "/")
 SET(CPACK_PACKAGE_DESCRIPTION_FILE "/usr/share/cmake-3.5/Templates/CPack.GenericDescription.txt")
 SET(CPACK_PACKAGE_DESCRIPTION_SUMMARY "px4 built using CMake")
-SET(CPACK_PACKAGE_FILE_NAME "px4-nuttx_px4fmu-v2_default-v1.5.0-2237-g714d916")
+SET(CPACK_PACKAGE_FILE_NAME "px4-nuttx_px4fmu-v2_default-v1.5.0-2341-g76eaf02")
 SET(CPACK_PACKAGE_INSTALL_DIRECTORY "px4-nuttx_px4fmu-v2_default 1.5.0
 ")
 SET(CPACK_PACKAGE_INSTALL_REGISTRY_KEY "px4-nuttx_px4fmu-v2_default 1.5.0

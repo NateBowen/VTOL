@@ -68,6 +68,7 @@
 #include <uORB/topics/hil_sensor.h>
 #include <uORB/topics/home_position.h>
 #include <uORB/topics/input_rc.h>
+#include <uORB/topics/led_control.h>
 #include <uORB/topics/log_message.h>
 #include <uORB/topics/manual_control_setpoint.h>
 #include <uORB/topics/mavlink_log.h>
@@ -130,7 +131,7 @@
 #include <uORB/topics/wind_estimate.h>
 
 
-const size_t _uorb_topics_count = 108;
+const size_t _uorb_topics_count = 109;
 const struct orb_metadata* _uorb_topics_list[_uorb_topics_count] = { 
     ORB_ID(mc_virtual_rates_setpoint),
     ORB_ID(sensor_baro),
@@ -193,10 +194,11 @@ const struct orb_metadata* _uorb_topics_list[_uorb_topics_count] = {
     ORB_ID(pwm_input),
     ORB_ID(position_setpoint),
     ORB_ID(collision_report),
+    ORB_ID(led_control),
     ORB_ID(mc_att_ctrl_status),
     ORB_ID(ekf2_innovations),
     ORB_ID(uavcan_parameter_request),
-    ORB_ID(vehicle_gps_position),
+    ORB_ID(gps_dump),
     ORB_ID(rc_parameter_map),
     ORB_ID(parameter_update),
     ORB_ID(geofence_result),
@@ -231,7 +233,7 @@ const struct orb_metadata* _uorb_topics_list[_uorb_topics_count] = {
     ORB_ID(ekf2_timestamps),
     ORB_ID(distance_sensor),
     ORB_ID(offboard_control_mode),
-    ORB_ID(gps_dump),
+    ORB_ID(vehicle_gps_position),
     ORB_ID(mavlink_log),
     ORB_ID(actuator_direct),
     ORB_ID(vehicle_vision_attitude),
