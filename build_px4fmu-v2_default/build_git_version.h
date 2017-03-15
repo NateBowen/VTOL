@@ -2,6 +2,6 @@
 /* Auto Magically Generated file */
 /* Do not edit! */
 #pragma once
-#define PX4_GIT_VERSION_STR  "c3a552c41b98cf455eaf9dcb23d64c74dd0337dc"
-#define PX4_GIT_VERSION_BINARY 0xc3a552c41b98cf45
-#define PX4_GIT_TAG_STR  "v1.5.0-2347-gc3a552c"
+#define PX4_GIT_VERSION_STR  "be54e75043c92ddc99a3dcfb46e9745ed42c1238"
+#define PX4_GIT_VERSION_BINARY 0xbe54e75043c92ddc
+#define PX4_GIT_TAG_STR  "v1.5.0-2349-gbe54e75"
