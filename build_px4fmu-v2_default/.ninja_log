@@ -804,3 +804,11 @@
 159843	160298	0	src/firmware/nuttx/firmware_nuttx	52d57fa9f23a3090
 160298	160503	0	src/firmware/nuttx/px4fmu-v2_default.px4	1a03a7c5a7ea6bb2
 160298	160503	0	src/firmware/nuttx/firmware_nuttx.bin	1a03a7c5a7ea6bb2
+35	171	0	build_git_version.h	b721d1ee5de0ca7a
+171	442	0	src/lib/version/CMakeFiles/lib__version.dir/version.c.obj	1627e2e2358c9cb1
+442	467	0	src/lib/version/liblib__version.a	1e008958d2a06d7e
+39	643	0	src/firmware/nuttx/romfs.o	ed1e2f4c03589762
+643	660	0	src/firmware/nuttx/libromfs.a	4874ee5fd0cd8504
+661	1149	0	src/firmware/nuttx/firmware_nuttx	52d57fa9f23a3090
+1149	1393	0	src/firmware/nuttx/px4fmu-v2_default.px4	1a03a7c5a7ea6bb2
+1149	1393	0	src/firmware/nuttx/firmware_nuttx.bin	1a03a7c5a7ea6bb2
