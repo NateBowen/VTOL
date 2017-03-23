@@ -9631,7 +9631,7 @@ END GROUP
 LOAD libmsg_gen.a
 LOAD src/lib/DriverFramework/framework/src/libdf_driver_framework.a
 
-.text           0x08004000    0xea9dc
+.text           0x08004000    0xea5dc
                 0x08004000                _stext = ABSOLUTE (.)
  *(.vectors)
  .vectors       0x08004000      0x19c /home/vtol/src/vtol/build_px4fmu-v2_default/px4fmu-v2/NuttX/nuttx/nuttx-export/libs/libnuttx.a(arch-up_vectors.o)
@@ -24907,399 +24907,399 @@ LOAD src/lib/DriverFramework/framework/src/libdf_driver_framework.a
  .rodata.romfs_img_len
                 0x080c9418        0x4 src/firmware/nuttx/libromfs.a(romfs.o)
                 0x080c9418                romfs_img_len
- .rodata        0x080c941c    0x20800 src/firmware/nuttx/libromfs.a(romfs.o)
+ .rodata        0x080c941c    0x20400 src/firmware/nuttx/libromfs.a(romfs.o)
                 0x080c941c                romfs_img
  .rodata.str1.1
-                0x080e9c1c       0xb7 libmsg_gen.a(actuator_armed.cpp.obj)
+                0x080e981c       0xb7 libmsg_gen.a(actuator_armed.cpp.obj)
  .rodata.str1.1
-                0x080e9cd3       0xb3 libmsg_gen.a(actuator_controls.cpp.obj)
+                0x080e98d3       0xb3 libmsg_gen.a(actuator_controls.cpp.obj)
                                  0xdb (size before relaxing)
  .rodata.str1.1
-                0x080e9d86       0x5b libmsg_gen.a(actuator_direct.cpp.obj)
+                0x080e9986       0x5b libmsg_gen.a(actuator_direct.cpp.obj)
  .rodata.str1.1
-                0x080e9de1       0x4c libmsg_gen.a(actuator_outputs.cpp.obj)
+                0x080e99e1       0x4c libmsg_gen.a(actuator_outputs.cpp.obj)
                                  0x5d (size before relaxing)
  .rodata.str1.1
-                0x080e9e2d       0x4c libmsg_gen.a(adc_report.cpp.obj)
+                0x080e9a2d       0x4c libmsg_gen.a(adc_report.cpp.obj)
  .rodata.str1.1
-                0x080e9e79       0xc3 libmsg_gen.a(airspeed.cpp.obj)
+                0x080e9a79       0xc3 libmsg_gen.a(airspeed.cpp.obj)
                                  0xcc (size before relaxing)
  .rodata.str1.1
-                0x080e9f3c       0x5f libmsg_gen.a(att_pos_mocap.cpp.obj)
+                0x080e9b3c       0x5f libmsg_gen.a(att_pos_mocap.cpp.obj)
                                  0x6d (size before relaxing)
  .rodata.str1.1
-                0x080e9f9b       0xde libmsg_gen.a(battery_status.cpp.obj)
+                0x080e9b9b       0xde libmsg_gen.a(battery_status.cpp.obj)
                                  0xed (size before relaxing)
  .rodata.str1.1
-                0x080ea079       0x36 libmsg_gen.a(camera_trigger.cpp.obj)
+                0x080e9c79       0x36 libmsg_gen.a(camera_trigger.cpp.obj)
                                  0x45 (size before relaxing)
  .rodata.str1.1
-                0x080ea0af       0x3c libmsg_gen.a(commander_state.cpp.obj)
+                0x080e9caf       0x3c libmsg_gen.a(commander_state.cpp.obj)
                                  0x4c (size before relaxing)
  .rodata.str1.1
-                0x080ea0eb       0xce libmsg_gen.a(collision_report.cpp.obj)
+                0x080e9ceb       0xce libmsg_gen.a(collision_report.cpp.obj)
  .rodata.str1.1
-                0x080ea1b9      0x1a3 libmsg_gen.a(control_state.cpp.obj)
+                0x080e9db9      0x1a3 libmsg_gen.a(control_state.cpp.obj)
                                 0x1b1 (size before relaxing)
  .rodata.str1.1
-                0x080ea35c       0x2f libmsg_gen.a(cpuload.cpp.obj)
+                0x080e9f5c       0x2f libmsg_gen.a(cpuload.cpp.obj)
                                  0x37 (size before relaxing)
  .rodata.str1.1
-                0x080ea38b       0x6a libmsg_gen.a(debug_key_value.cpp.obj)
+                0x080e9f8b       0x6a libmsg_gen.a(debug_key_value.cpp.obj)
  .rodata.str1.1
-                0x080ea3f5       0xa9 libmsg_gen.a(differential_pressure.cpp.obj)
+                0x080e9ff5       0xa9 libmsg_gen.a(differential_pressure.cpp.obj)
                                  0xbf (size before relaxing)
  .rodata.str1.1
-                0x080ea49e       0xa3 libmsg_gen.a(distance_sensor.cpp.obj)
+                0x080ea09e       0xa3 libmsg_gen.a(distance_sensor.cpp.obj)
                                  0xb3 (size before relaxing)
  .rodata.str1.1
-                0x080ea541      0x176 libmsg_gen.a(ekf2_innovations.cpp.obj)
+                0x080ea141      0x176 libmsg_gen.a(ekf2_innovations.cpp.obj)
                                 0x187 (size before relaxing)
  .rodata.str1.1
-                0x080ea6b7      0x2ff libmsg_gen.a(ekf2_replay.cpp.obj)
+                0x080ea2b7      0x2ff libmsg_gen.a(ekf2_replay.cpp.obj)
  .rodata.str1.1
-                0x080ea9b6       0xf7 libmsg_gen.a(ekf2_timestamps.cpp.obj)
+                0x080ea5b6       0xf7 libmsg_gen.a(ekf2_timestamps.cpp.obj)
                                 0x107 (size before relaxing)
  .rodata.str1.1
-                0x080eaaad      0x113 libmsg_gen.a(esc_report.cpp.obj)
+                0x080ea6ad      0x113 libmsg_gen.a(esc_report.cpp.obj)
  .rodata.str1.1
-                0x080eabc0       0x79 libmsg_gen.a(esc_status.cpp.obj)
+                0x080ea7c0       0x79 libmsg_gen.a(esc_status.cpp.obj)
                                  0x84 (size before relaxing)
  .rodata.str1.1
-                0x080eac39      0x1ef libmsg_gen.a(estimator_status.cpp.obj)
+                0x080ea839      0x1ef libmsg_gen.a(estimator_status.cpp.obj)
                                 0x200 (size before relaxing)
  .rodata.str1.1
-                0x080eae28       0x52 libmsg_gen.a(fence.cpp.obj)
+                0x080eaa28       0x52 libmsg_gen.a(fence.cpp.obj)
                                  0x58 (size before relaxing)
  .rodata.str1.1
-                0x080eae7a       0x35 libmsg_gen.a(fence_vertex.cpp.obj)
+                0x080eaa7a       0x35 libmsg_gen.a(fence_vertex.cpp.obj)
  .rodata.str1.1
-                0x080eaeaf       0x51 libmsg_gen.a(filtered_bottom_flow.cpp.obj)
+                0x080eaaaf       0x51 libmsg_gen.a(filtered_bottom_flow.cpp.obj)
  .rodata.str1.1
-                0x080eaf00       0x82 libmsg_gen.a(follow_target.cpp.obj)
+                0x080eab00       0x82 libmsg_gen.a(follow_target.cpp.obj)
  .rodata.str1.1
-                0x080eaf82      0x12f libmsg_gen.a(fw_pos_ctrl_status.cpp.obj)
+                0x080eab82      0x12f libmsg_gen.a(fw_pos_ctrl_status.cpp.obj)
  .rodata.str1.1
-                0x080eb0b1      0x155 libmsg_gen.a(fw_virtual_attitude_setpoint.cpp.obj)
+                0x080eacb1      0x155 libmsg_gen.a(fw_virtual_attitude_setpoint.cpp.obj)
  .rodata.str1.1
-                0x080eb206       0x5c libmsg_gen.a(fw_virtual_rates_setpoint.cpp.obj)
+                0x080eae06       0x5c libmsg_gen.a(fw_virtual_rates_setpoint.cpp.obj)
  .rodata.str1.1
-                0x080eb262       0x68 libmsg_gen.a(geofence_result.cpp.obj)
+                0x080eae62       0x68 libmsg_gen.a(geofence_result.cpp.obj)
  .rodata.str1.1
-                0x080eb2ca       0x31 libmsg_gen.a(gps_dump.cpp.obj)
+                0x080eaeca       0x31 libmsg_gen.a(gps_dump.cpp.obj)
                                  0x3a (size before relaxing)
  .rodata.str1.1
-                0x080eb2fb       0x50 libmsg_gen.a(gps_inject_data.cpp.obj)
+                0x080eaefb       0x50 libmsg_gen.a(gps_inject_data.cpp.obj)
  .rodata.str1.1
-                0x080eb34b      0x742 libmsg_gen.a(hil_sensor.cpp.obj)
+                0x080eaf4b      0x742 libmsg_gen.a(hil_sensor.cpp.obj)
  .rodata.str1.1
-                0x080eba8d       0x9a libmsg_gen.a(home_position.cpp.obj)
+                0x080eb68d       0x9a libmsg_gen.a(home_position.cpp.obj)
  .rodata.str1.1
-                0x080ebb27      0x10b libmsg_gen.a(input_rc.cpp.obj)
+                0x080eb727      0x10b libmsg_gen.a(input_rc.cpp.obj)
                                 0x114 (size before relaxing)
  .rodata.str1.1
-                0x080ebc32       0x85 libmsg_gen.a(led_control.cpp.obj)
+                0x080eb832       0x85 libmsg_gen.a(led_control.cpp.obj)
  .rodata.str1.1
-                0x080ebcb7       0x37 libmsg_gen.a(log_message.cpp.obj)
+                0x080eb8b7       0x37 libmsg_gen.a(log_message.cpp.obj)
                                  0x43 (size before relaxing)
  .rodata.str1.1
-                0x080ebcee      0x1e0 libmsg_gen.a(manual_control_setpoint.cpp.obj)
+                0x080eb8ee      0x1e0 libmsg_gen.a(manual_control_setpoint.cpp.obj)
  .rodata.str1.1
-                0x080ebece       0x57 libmsg_gen.a(mavlink_log.cpp.obj)
+                0x080ebace       0x57 libmsg_gen.a(mavlink_log.cpp.obj)
  .rodata.str1.1
-                0x080ebf25       0x7e libmsg_gen.a(mc_att_ctrl_status.cpp.obj)
+                0x080ebb25       0x7e libmsg_gen.a(mc_att_ctrl_status.cpp.obj)
  .rodata.str1.1
-                0x080ebfa3       0x1d libmsg_gen.a(mc_virtual_attitude_setpoint.cpp.obj)
+                0x080ebba3       0x1d libmsg_gen.a(mc_virtual_attitude_setpoint.cpp.obj)
                                 0x155 (size before relaxing)
  .rodata.str1.1
-                0x080ebfc0       0x1a libmsg_gen.a(mc_virtual_rates_setpoint.cpp.obj)
+                0x080ebbc0       0x1a libmsg_gen.a(mc_virtual_rates_setpoint.cpp.obj)
                                  0x5c (size before relaxing)
  .rodata.str1.1
-                0x080ebfda       0x80 libmsg_gen.a(mission.cpp.obj)
+                0x080ebbda       0x80 libmsg_gen.a(mission.cpp.obj)
                                  0x88 (size before relaxing)
  .rodata.str1.1
-                0x080ec05a      0x144 libmsg_gen.a(mission_result.cpp.obj)
+                0x080ebc5a      0x144 libmsg_gen.a(mission_result.cpp.obj)
  .rodata.str1.1
-                0x080ec19e       0x59 libmsg_gen.a(mount_orientation.cpp.obj)
+                0x080ebd9e       0x59 libmsg_gen.a(mount_orientation.cpp.obj)
  .rodata.str1.1
-                0x080ec1f7       0x5c libmsg_gen.a(multirotor_motor_limits.cpp.obj)
+                0x080ebdf7       0x5c libmsg_gen.a(multirotor_motor_limits.cpp.obj)
  .rodata.str1.1
-                0x080ec253       0xda libmsg_gen.a(offboard_control_mode.cpp.obj)
+                0x080ebe53       0xda libmsg_gen.a(offboard_control_mode.cpp.obj)
  .rodata.str1.1
-                0x080ec32d      0x171 libmsg_gen.a(optical_flow.cpp.obj)
+                0x080ebf2d      0x171 libmsg_gen.a(optical_flow.cpp.obj)
                                 0x17e (size before relaxing)
  .rodata.str1.1
-                0x080ec49e       0x5f libmsg_gen.a(output_pwm.cpp.obj)
+                0x080ec09e       0x5f libmsg_gen.a(output_pwm.cpp.obj)
  .rodata.str1.1
-                0x080ec4fd       0x45 libmsg_gen.a(parameter_update.cpp.obj)
+                0x080ec0fd       0x45 libmsg_gen.a(parameter_update.cpp.obj)
  .rodata.str1.1
-                0x080ec542      0x1f7 libmsg_gen.a(position_setpoint.cpp.obj)
+                0x080ec142      0x1f7 libmsg_gen.a(position_setpoint.cpp.obj)
                                 0x209 (size before relaxing)
  .rodata.str1.1
-                0x080ec739       0x87 libmsg_gen.a(position_setpoint_triplet.cpp.obj)
+                0x080ec339       0x87 libmsg_gen.a(position_setpoint_triplet.cpp.obj)
                                  0xa1 (size before relaxing)
  .rodata.str1.1
-                0x080ec7c0       0x4e libmsg_gen.a(pwm_input.cpp.obj)
+                0x080ec3c0       0x4e libmsg_gen.a(pwm_input.cpp.obj)
                                  0x58 (size before relaxing)
  .rodata.str1.1
-                0x080ec80e       0x43 libmsg_gen.a(qshell_req.cpp.obj)
+                0x080ec40e       0x43 libmsg_gen.a(qshell_req.cpp.obj)
  .rodata.str1.1
-                0x080ec851       0xbc libmsg_gen.a(rc_channels.cpp.obj)
+                0x080ec451       0xbc libmsg_gen.a(rc_channels.cpp.obj)
                                  0xc8 (size before relaxing)
  .rodata.str1.1
-                0x080ec90d       0xb6 libmsg_gen.a(rc_parameter_map.cpp.obj)
+                0x080ec50d       0xb6 libmsg_gen.a(rc_parameter_map.cpp.obj)
  .rodata.str1.1
-                0x080ec9c3       0x56 libmsg_gen.a(safety.cpp.obj)
+                0x080ec5c3       0x56 libmsg_gen.a(safety.cpp.obj)
                                  0x5d (size before relaxing)
  .rodata.str1.1
-                0x080eca19       0x93 libmsg_gen.a(satellite_info.cpp.obj)
+                0x080ec619       0x93 libmsg_gen.a(satellite_info.cpp.obj)
                                  0xa2 (size before relaxing)
  .rodata.str1.1
-                0x080ecaac      0x10f libmsg_gen.a(sensor_accel.cpp.obj)
+                0x080ec6ac      0x10f libmsg_gen.a(sensor_accel.cpp.obj)
                                 0x11c (size before relaxing)
  .rodata.str1.1
-                0x080ecbbb       0x6c libmsg_gen.a(sensor_baro.cpp.obj)
+                0x080ec7bb       0x6c libmsg_gen.a(sensor_baro.cpp.obj)
                                  0x78 (size before relaxing)
  .rodata.str1.1
-                0x080ecc27      0x130 libmsg_gen.a(sensor_combined.cpp.obj)
+                0x080ec827      0x130 libmsg_gen.a(sensor_combined.cpp.obj)
                                 0x140 (size before relaxing)
  .rodata.str1.1
-                0x080ecd57      0x26b libmsg_gen.a(sensor_correction.cpp.obj)
+                0x080ec957      0x26b libmsg_gen.a(sensor_correction.cpp.obj)
  .rodata.str1.1
-                0x080ecfc2      0x110 libmsg_gen.a(sensor_gyro.cpp.obj)
+                0x080ecbc2      0x110 libmsg_gen.a(sensor_gyro.cpp.obj)
                                 0x11c (size before relaxing)
  .rodata.str1.1
-                0x080ed0d2       0xcd libmsg_gen.a(sensor_mag.cpp.obj)
+                0x080eccd2       0xcd libmsg_gen.a(sensor_mag.cpp.obj)
  .rodata.str1.1
-                0x080ed19f       0x53 libmsg_gen.a(sensor_preflight.cpp.obj)
+                0x080ecd9f       0x53 libmsg_gen.a(sensor_preflight.cpp.obj)
                                  0x64 (size before relaxing)
  .rodata.str1.1
-                0x080ed1f2       0x42 libmsg_gen.a(servorail_status.cpp.obj)
+                0x080ecdf2       0x42 libmsg_gen.a(servorail_status.cpp.obj)
  .rodata.str1.1
-                0x080ed234       0x72 libmsg_gen.a(subsystem_info.cpp.obj)
+                0x080ece34       0x72 libmsg_gen.a(subsystem_info.cpp.obj)
  .rodata.str1.1
-                0x080ed2a6       0xa4 libmsg_gen.a(system_power.cpp.obj)
+                0x080ecea6       0xa4 libmsg_gen.a(system_power.cpp.obj)
                                  0xb1 (size before relaxing)
  .rodata.str1.1
-                0x080ed34a       0x53 libmsg_gen.a(task_stack_info.cpp.obj)
+                0x080ecf4a       0x53 libmsg_gen.a(task_stack_info.cpp.obj)
                                  0x63 (size before relaxing)
  .rodata.str1.1
-                0x080ed39d      0x1a1 libmsg_gen.a(tecs_status.cpp.obj)
+                0x080ecf9d      0x1a1 libmsg_gen.a(tecs_status.cpp.obj)
                                 0x1ad (size before relaxing)
  .rodata.str1.1
-                0x080ed53e       0xfc libmsg_gen.a(telemetry_status.cpp.obj)
+                0x080ed13e       0xfc libmsg_gen.a(telemetry_status.cpp.obj)
                                 0x10d (size before relaxing)
  .rodata.str1.1
-                0x080ed63a       0x41 libmsg_gen.a(test_motor.cpp.obj)
+                0x080ed23a       0x41 libmsg_gen.a(test_motor.cpp.obj)
  .rodata.str1.1
-                0x080ed67b       0x33 libmsg_gen.a(time_offset.cpp.obj)
+                0x080ed27b       0x33 libmsg_gen.a(time_offset.cpp.obj)
  .rodata.str1.1
-                0x080ed6ae      0x113 libmsg_gen.a(transponder_report.cpp.obj)
+                0x080ed2ae      0x113 libmsg_gen.a(transponder_report.cpp.obj)
  .rodata.str1.1
-                0x080ed7c1       0xc3 libmsg_gen.a(uavcan_parameter_request.cpp.obj)
+                0x080ed3c1       0xc3 libmsg_gen.a(uavcan_parameter_request.cpp.obj)
  .rodata.str1.1
-                0x080ed884       0xc1 libmsg_gen.a(uavcan_parameter_value.cpp.obj)
+                0x080ed484       0xc1 libmsg_gen.a(uavcan_parameter_value.cpp.obj)
  .rodata.str1.1
-                0x080ed945       0x93 libmsg_gen.a(ulog_stream.cpp.obj)
+                0x080ed545       0x93 libmsg_gen.a(ulog_stream.cpp.obj)
  .rodata.str1.1
-                0x080ed9d8       0x4b libmsg_gen.a(ulog_stream_ack.cpp.obj)
+                0x080ed5d8       0x4b libmsg_gen.a(ulog_stream_ack.cpp.obj)
  .rodata.str1.1
-                0x080eda23       0x81 libmsg_gen.a(vehicle_attitude.cpp.obj)
+                0x080ed623       0x81 libmsg_gen.a(vehicle_attitude.cpp.obj)
                                  0xaa (size before relaxing)
  .rodata.str1.1
-                0x080edaa4      0x152 libmsg_gen.a(vehicle_attitude_setpoint.cpp.obj)
+                0x080ed6a4      0x152 libmsg_gen.a(vehicle_attitude_setpoint.cpp.obj)
  .rodata.str1.1
-                0x080edaa4       0x5d libmsg_gen.a(vehicle_command_ack.cpp.obj)
+                0x080ed6a4       0x5d libmsg_gen.a(vehicle_command_ack.cpp.obj)
  .rodata.str1.1
-                0x080edb01      0x10e libmsg_gen.a(vehicle_command.cpp.obj)
+                0x080ed701      0x10e libmsg_gen.a(vehicle_command.cpp.obj)
                                 0x11e (size before relaxing)
  .rodata.str1.1
-                0x080edc0f      0x27a libmsg_gen.a(vehicle_control_mode.cpp.obj)
+                0x080ed80f      0x27a libmsg_gen.a(vehicle_control_mode.cpp.obj)
  .rodata.str1.1
-                0x080ede89       0x4d libmsg_gen.a(vehicle_force_setpoint.cpp.obj)
+                0x080eda89       0x4d libmsg_gen.a(vehicle_force_setpoint.cpp.obj)
  .rodata.str1.1
-                0x080eded6      0x176 libmsg_gen.a(vehicle_global_position.cpp.obj)
+                0x080edad6      0x176 libmsg_gen.a(vehicle_global_position.cpp.obj)
                                 0x18e (size before relaxing)
  .rodata.str1.1
-                0x080ee04c       0x44 libmsg_gen.a(vehicle_global_velocity_setpoint.cpp.obj)
+                0x080edc4c       0x44 libmsg_gen.a(vehicle_global_velocity_setpoint.cpp.obj)
                                  0x65 (size before relaxing)
  .rodata.str1.1
-                0x080ee090      0x1a5 libmsg_gen.a(vehicle_gps_position.cpp.obj)
+                0x080edc90      0x1a5 libmsg_gen.a(vehicle_gps_position.cpp.obj)
                                 0x1ba (size before relaxing)
  .rodata.str1.1
-                0x080ee235       0x65 libmsg_gen.a(vehicle_land_detected.cpp.obj)
+                0x080ede35       0x65 libmsg_gen.a(vehicle_land_detected.cpp.obj)
                                  0x7b (size before relaxing)
  .rodata.str1.1
-                0x080ee29a      0x25c libmsg_gen.a(vehicle_local_position.cpp.obj)
+                0x080ede9a      0x25c libmsg_gen.a(vehicle_local_position.cpp.obj)
                                 0x28b (size before relaxing)
  .rodata.str1.1
-                0x080ee4f6       0x75 libmsg_gen.a(vehicle_local_position_setpoint.cpp.obj)
+                0x080ee0f6       0x75 libmsg_gen.a(vehicle_local_position_setpoint.cpp.obj)
                                  0x95 (size before relaxing)
  .rodata.str1.1
-                0x080ee56b       0x59 libmsg_gen.a(vehicle_rates_setpoint.cpp.obj)
+                0x080ee16b       0x59 libmsg_gen.a(vehicle_rates_setpoint.cpp.obj)
  .rodata.str1.1
-                0x080ee56b       0x8b libmsg_gen.a(vehicle_roi.cpp.obj)
+                0x080ee16b       0x8b libmsg_gen.a(vehicle_roi.cpp.obj)
  .rodata.str1.1
-                0x080ee5f6      0x233 libmsg_gen.a(vehicle_status.cpp.obj)
+                0x080ee1f6      0x233 libmsg_gen.a(vehicle_status.cpp.obj)
                                 0x242 (size before relaxing)
  .rodata.str1.1
-                0x080ee829       0x80 libmsg_gen.a(vehicle_status_flags.cpp.obj)
+                0x080ee429       0x80 libmsg_gen.a(vehicle_status_flags.cpp.obj)
  .rodata.str1.1
-                0x080ee8a9       0xb7 libmsg_gen.a(vtol_vehicle_status.cpp.obj)
+                0x080ee4a9       0xb7 libmsg_gen.a(vtol_vehicle_status.cpp.obj)
                                  0xcb (size before relaxing)
  .rodata.str1.1
-                0x080ee960       0x6c libmsg_gen.a(wind_estimate.cpp.obj)
+                0x080ee560       0x6c libmsg_gen.a(wind_estimate.cpp.obj)
                                  0x7a (size before relaxing)
  .rodata._ZTVN15DriverFramework9DevHandleE
-                0x080ee9cc       0x10 src/lib/DriverFramework/framework/src/libdf_driver_framework.a(DevMgr_Nuttx.cpp.obj)
-                0x080ee9cc                vtable for DriverFramework::DevHandle
+                0x080ee5cc       0x10 src/lib/DriverFramework/framework/src/libdf_driver_framework.a(DevMgr_Nuttx.cpp.obj)
+                0x080ee5cc                vtable for DriverFramework::DevHandle
  *(.gnu.linkonce.t.*)
  *(.got)
  *(.gcc_except_table)
  *(.gnu.linkonce.r.*)
-                0x080ee9dc                _etext = ABSOLUTE (.)
+                0x080ee5dc                _etext = ABSOLUTE (.)
                 0x0808c62c                __errno = get_errno_ptr
 
-.glue_7         0x080ee9dc        0x0
- .glue_7        0x080ee9dc        0x0 linker stubs
+.glue_7         0x080ee5dc        0x0
+ .glue_7        0x080ee5dc        0x0 linker stubs
 
-.glue_7t        0x080ee9dc        0x0
- .glue_7t       0x080ee9dc        0x0 linker stubs
+.glue_7t        0x080ee5dc        0x0
+ .glue_7t       0x080ee5dc        0x0 linker stubs
 
-.vfp11_veneer   0x080ee9dc        0x0
- .vfp11_veneer  0x080ee9dc        0x0 linker stubs
+.vfp11_veneer   0x080ee5dc        0x0
+ .vfp11_veneer  0x080ee5dc        0x0 linker stubs
 
-.v4_bx          0x080ee9dc        0x0
- .v4_bx         0x080ee9dc        0x0 linker stubs
+.v4_bx          0x080ee5dc        0x0
+ .v4_bx         0x080ee5dc        0x0 linker stubs
 
-.iplt           0x080ee9dc        0x0
- .iplt          0x080ee9dc        0x0 src/firmware/nuttx/CMakeFiles/firmware_nuttx.dir/builtin_commands.c.obj
+.iplt           0x080ee5dc        0x0
+ .iplt          0x080ee5dc        0x0 src/firmware/nuttx/CMakeFiles/firmware_nuttx.dir/builtin_commands.c.obj
 
-.init_section   0x080ee9dc      0x18c
-                0x080ee9dc                _sinit = ABSOLUTE (.)
+.init_section   0x080ee5dc      0x18c
+                0x080ee5dc                _sinit = ABSOLUTE (.)
  *(.init_array .init_array.*)
- .init_array    0x080ee9dc        0x4 src/modules/commander/libmodules__commander.a(commander.cpp.obj)
- .init_array    0x080ee9e0        0x4 src/modules/commander/libmodules__commander.a(commander_helper.cpp.obj)
- .init_array    0x080ee9e4        0x4 src/modules/mavlink/libmodules__mavlink.a(mavlink_messages.cpp.obj)
- .init_array    0x080ee9e8        0x4 libmsg_gen.a(actuator_armed.cpp.obj)
- .init_array    0x080ee9ec        0x4 libmsg_gen.a(actuator_controls.cpp.obj)
- .init_array    0x080ee9f0        0x4 libmsg_gen.a(actuator_direct.cpp.obj)
- .init_array    0x080ee9f4        0x4 libmsg_gen.a(actuator_outputs.cpp.obj)
- .init_array    0x080ee9f8        0x4 libmsg_gen.a(adc_report.cpp.obj)
- .init_array    0x080ee9fc        0x4 libmsg_gen.a(airspeed.cpp.obj)
- .init_array    0x080eea00        0x4 libmsg_gen.a(att_pos_mocap.cpp.obj)
- .init_array    0x080eea04        0x4 libmsg_gen.a(battery_status.cpp.obj)
- .init_array    0x080eea08        0x4 libmsg_gen.a(camera_trigger.cpp.obj)
- .init_array    0x080eea0c        0x4 libmsg_gen.a(commander_state.cpp.obj)
- .init_array    0x080eea10        0x4 libmsg_gen.a(collision_report.cpp.obj)
- .init_array    0x080eea14        0x4 libmsg_gen.a(control_state.cpp.obj)
- .init_array    0x080eea18        0x4 libmsg_gen.a(cpuload.cpp.obj)
- .init_array    0x080eea1c        0x4 libmsg_gen.a(debug_key_value.cpp.obj)
- .init_array    0x080eea20        0x4 libmsg_gen.a(differential_pressure.cpp.obj)
- .init_array    0x080eea24        0x4 libmsg_gen.a(distance_sensor.cpp.obj)
- .init_array    0x080eea28        0x4 libmsg_gen.a(ekf2_innovations.cpp.obj)
- .init_array    0x080eea2c        0x4 libmsg_gen.a(ekf2_replay.cpp.obj)
- .init_array    0x080eea30        0x4 libmsg_gen.a(ekf2_timestamps.cpp.obj)
- .init_array    0x080eea34        0x4 libmsg_gen.a(esc_report.cpp.obj)
- .init_array    0x080eea38        0x4 libmsg_gen.a(esc_status.cpp.obj)
- .init_array    0x080eea3c        0x4 libmsg_gen.a(estimator_status.cpp.obj)
- .init_array    0x080eea40        0x4 libmsg_gen.a(fence.cpp.obj)
- .init_array    0x080eea44        0x4 libmsg_gen.a(fence_vertex.cpp.obj)
- .init_array    0x080eea48        0x4 libmsg_gen.a(filtered_bottom_flow.cpp.obj)
- .init_array    0x080eea4c        0x4 libmsg_gen.a(follow_target.cpp.obj)
- .init_array    0x080eea50        0x4 libmsg_gen.a(fw_pos_ctrl_status.cpp.obj)
- .init_array    0x080eea54        0x4 libmsg_gen.a(fw_virtual_attitude_setpoint.cpp.obj)
- .init_array    0x080eea58        0x4 libmsg_gen.a(fw_virtual_rates_setpoint.cpp.obj)
- .init_array    0x080eea5c        0x4 libmsg_gen.a(geofence_result.cpp.obj)
- .init_array    0x080eea60        0x4 libmsg_gen.a(gps_dump.cpp.obj)
- .init_array    0x080eea64        0x4 libmsg_gen.a(gps_inject_data.cpp.obj)
- .init_array    0x080eea68        0x4 libmsg_gen.a(hil_sensor.cpp.obj)
- .init_array    0x080eea6c        0x4 libmsg_gen.a(home_position.cpp.obj)
- .init_array    0x080eea70        0x4 libmsg_gen.a(input_rc.cpp.obj)
- .init_array    0x080eea74        0x4 libmsg_gen.a(led_control.cpp.obj)
- .init_array    0x080eea78        0x4 libmsg_gen.a(log_message.cpp.obj)
- .init_array    0x080eea7c        0x4 libmsg_gen.a(manual_control_setpoint.cpp.obj)
- .init_array    0x080eea80        0x4 libmsg_gen.a(mavlink_log.cpp.obj)
- .init_array    0x080eea84        0x4 libmsg_gen.a(mc_att_ctrl_status.cpp.obj)
- .init_array    0x080eea88        0x4 libmsg_gen.a(mc_virtual_attitude_setpoint.cpp.obj)
- .init_array    0x080eea8c        0x4 libmsg_gen.a(mc_virtual_rates_setpoint.cpp.obj)
- .init_array    0x080eea90        0x4 libmsg_gen.a(mission.cpp.obj)
- .init_array    0x080eea94        0x4 libmsg_gen.a(mission_result.cpp.obj)
- .init_array    0x080eea98        0x4 libmsg_gen.a(mount_orientation.cpp.obj)
- .init_array    0x080eea9c        0x4 libmsg_gen.a(multirotor_motor_limits.cpp.obj)
- .init_array    0x080eeaa0        0x4 libmsg_gen.a(offboard_control_mode.cpp.obj)
- .init_array    0x080eeaa4        0x4 libmsg_gen.a(optical_flow.cpp.obj)
- .init_array    0x080eeaa8        0x4 libmsg_gen.a(output_pwm.cpp.obj)
- .init_array    0x080eeaac        0x4 libmsg_gen.a(parameter_update.cpp.obj)
- .init_array    0x080eeab0        0x4 libmsg_gen.a(position_setpoint.cpp.obj)
- .init_array    0x080eeab4        0x4 libmsg_gen.a(position_setpoint_triplet.cpp.obj)
- .init_array    0x080eeab8        0x4 libmsg_gen.a(pwm_input.cpp.obj)
- .init_array    0x080eeabc        0x4 libmsg_gen.a(qshell_req.cpp.obj)
- .init_array    0x080eeac0        0x4 libmsg_gen.a(rc_channels.cpp.obj)
- .init_array    0x080eeac4        0x4 libmsg_gen.a(rc_parameter_map.cpp.obj)
- .init_array    0x080eeac8        0x4 libmsg_gen.a(safety.cpp.obj)
- .init_array    0x080eeacc        0x4 libmsg_gen.a(satellite_info.cpp.obj)
- .init_array    0x080eead0        0x4 libmsg_gen.a(sensor_accel.cpp.obj)
- .init_array    0x080eead4        0x4 libmsg_gen.a(sensor_baro.cpp.obj)
- .init_array    0x080eead8        0x4 libmsg_gen.a(sensor_combined.cpp.obj)
- .init_array    0x080eeadc        0x4 libmsg_gen.a(sensor_correction.cpp.obj)
- .init_array    0x080eeae0        0x4 libmsg_gen.a(sensor_gyro.cpp.obj)
- .init_array    0x080eeae4        0x4 libmsg_gen.a(sensor_mag.cpp.obj)
- .init_array    0x080eeae8        0x4 libmsg_gen.a(sensor_preflight.cpp.obj)
- .init_array    0x080eeaec        0x4 libmsg_gen.a(servorail_status.cpp.obj)
- .init_array    0x080eeaf0        0x4 libmsg_gen.a(subsystem_info.cpp.obj)
- .init_array    0x080eeaf4        0x4 libmsg_gen.a(system_power.cpp.obj)
- .init_array    0x080eeaf8        0x4 libmsg_gen.a(task_stack_info.cpp.obj)
- .init_array    0x080eeafc        0x4 libmsg_gen.a(tecs_status.cpp.obj)
- .init_array    0x080eeb00        0x4 libmsg_gen.a(telemetry_status.cpp.obj)
- .init_array    0x080eeb04        0x4 libmsg_gen.a(test_motor.cpp.obj)
- .init_array    0x080eeb08        0x4 libmsg_gen.a(time_offset.cpp.obj)
- .init_array    0x080eeb0c        0x4 libmsg_gen.a(transponder_report.cpp.obj)
- .init_array    0x080eeb10        0x4 libmsg_gen.a(uavcan_parameter_request.cpp.obj)
- .init_array    0x080eeb14        0x4 libmsg_gen.a(uavcan_parameter_value.cpp.obj)
- .init_array    0x080eeb18        0x4 libmsg_gen.a(ulog_stream.cpp.obj)
- .init_array    0x080eeb1c        0x4 libmsg_gen.a(ulog_stream_ack.cpp.obj)
- .init_array    0x080eeb20        0x4 libmsg_gen.a(vehicle_attitude.cpp.obj)
- .init_array    0x080eeb24        0x4 libmsg_gen.a(vehicle_attitude_setpoint.cpp.obj)
- .init_array    0x080eeb28        0x4 libmsg_gen.a(vehicle_command_ack.cpp.obj)
- .init_array    0x080eeb2c        0x4 libmsg_gen.a(vehicle_command.cpp.obj)
- .init_array    0x080eeb30        0x4 libmsg_gen.a(vehicle_control_mode.cpp.obj)
- .init_array    0x080eeb34        0x4 libmsg_gen.a(vehicle_force_setpoint.cpp.obj)
- .init_array    0x080eeb38        0x4 libmsg_gen.a(vehicle_global_position.cpp.obj)
- .init_array    0x080eeb3c        0x4 libmsg_gen.a(vehicle_global_velocity_setpoint.cpp.obj)
- .init_array    0x080eeb40        0x4 libmsg_gen.a(vehicle_gps_position.cpp.obj)
- .init_array    0x080eeb44        0x4 libmsg_gen.a(vehicle_land_detected.cpp.obj)
- .init_array    0x080eeb48        0x4 libmsg_gen.a(vehicle_local_position.cpp.obj)
- .init_array    0x080eeb4c        0x4 libmsg_gen.a(vehicle_local_position_setpoint.cpp.obj)
- .init_array    0x080eeb50        0x4 libmsg_gen.a(vehicle_rates_setpoint.cpp.obj)
- .init_array    0x080eeb54        0x4 libmsg_gen.a(vehicle_roi.cpp.obj)
- .init_array    0x080eeb58        0x4 libmsg_gen.a(vehicle_status.cpp.obj)
- .init_array    0x080eeb5c        0x4 libmsg_gen.a(vehicle_status_flags.cpp.obj)
- .init_array    0x080eeb60        0x4 libmsg_gen.a(vtol_vehicle_status.cpp.obj)
- .init_array    0x080eeb64        0x4 libmsg_gen.a(wind_estimate.cpp.obj)
-                0x080eeb68                _einit = ABSOLUTE (.)
+ .init_array    0x080ee5dc        0x4 src/modules/commander/libmodules__commander.a(commander.cpp.obj)
+ .init_array    0x080ee5e0        0x4 src/modules/commander/libmodules__commander.a(commander_helper.cpp.obj)
+ .init_array    0x080ee5e4        0x4 src/modules/mavlink/libmodules__mavlink.a(mavlink_messages.cpp.obj)
+ .init_array    0x080ee5e8        0x4 libmsg_gen.a(actuator_armed.cpp.obj)
+ .init_array    0x080ee5ec        0x4 libmsg_gen.a(actuator_controls.cpp.obj)
+ .init_array    0x080ee5f0        0x4 libmsg_gen.a(actuator_direct.cpp.obj)
+ .init_array    0x080ee5f4        0x4 libmsg_gen.a(actuator_outputs.cpp.obj)
+ .init_array    0x080ee5f8        0x4 libmsg_gen.a(adc_report.cpp.obj)
+ .init_array    0x080ee5fc        0x4 libmsg_gen.a(airspeed.cpp.obj)
+ .init_array    0x080ee600        0x4 libmsg_gen.a(att_pos_mocap.cpp.obj)
+ .init_array    0x080ee604        0x4 libmsg_gen.a(battery_status.cpp.obj)
+ .init_array    0x080ee608        0x4 libmsg_gen.a(camera_trigger.cpp.obj)
+ .init_array    0x080ee60c        0x4 libmsg_gen.a(commander_state.cpp.obj)
+ .init_array    0x080ee610        0x4 libmsg_gen.a(collision_report.cpp.obj)
+ .init_array    0x080ee614        0x4 libmsg_gen.a(control_state.cpp.obj)
+ .init_array    0x080ee618        0x4 libmsg_gen.a(cpuload.cpp.obj)
+ .init_array    0x080ee61c        0x4 libmsg_gen.a(debug_key_value.cpp.obj)
+ .init_array    0x080ee620        0x4 libmsg_gen.a(differential_pressure.cpp.obj)
+ .init_array    0x080ee624        0x4 libmsg_gen.a(distance_sensor.cpp.obj)
+ .init_array    0x080ee628        0x4 libmsg_gen.a(ekf2_innovations.cpp.obj)
+ .init_array    0x080ee62c        0x4 libmsg_gen.a(ekf2_replay.cpp.obj)
+ .init_array    0x080ee630        0x4 libmsg_gen.a(ekf2_timestamps.cpp.obj)
+ .init_array    0x080ee634        0x4 libmsg_gen.a(esc_report.cpp.obj)
+ .init_array    0x080ee638        0x4 libmsg_gen.a(esc_status.cpp.obj)
+ .init_array    0x080ee63c        0x4 libmsg_gen.a(estimator_status.cpp.obj)
+ .init_array    0x080ee640        0x4 libmsg_gen.a(fence.cpp.obj)
+ .init_array    0x080ee644        0x4 libmsg_gen.a(fence_vertex.cpp.obj)
+ .init_array    0x080ee648        0x4 libmsg_gen.a(filtered_bottom_flow.cpp.obj)
+ .init_array    0x080ee64c        0x4 libmsg_gen.a(follow_target.cpp.obj)
+ .init_array    0x080ee650        0x4 libmsg_gen.a(fw_pos_ctrl_status.cpp.obj)
+ .init_array    0x080ee654        0x4 libmsg_gen.a(fw_virtual_attitude_setpoint.cpp.obj)
+ .init_array    0x080ee658        0x4 libmsg_gen.a(fw_virtual_rates_setpoint.cpp.obj)
+ .init_array    0x080ee65c        0x4 libmsg_gen.a(geofence_result.cpp.obj)
+ .init_array    0x080ee660        0x4 libmsg_gen.a(gps_dump.cpp.obj)
+ .init_array    0x080ee664        0x4 libmsg_gen.a(gps_inject_data.cpp.obj)
+ .init_array    0x080ee668        0x4 libmsg_gen.a(hil_sensor.cpp.obj)
+ .init_array    0x080ee66c        0x4 libmsg_gen.a(home_position.cpp.obj)
+ .init_array    0x080ee670        0x4 libmsg_gen.a(input_rc.cpp.obj)
+ .init_array    0x080ee674        0x4 libmsg_gen.a(led_control.cpp.obj)
+ .init_array    0x080ee678        0x4 libmsg_gen.a(log_message.cpp.obj)
+ .init_array    0x080ee67c        0x4 libmsg_gen.a(manual_control_setpoint.cpp.obj)
+ .init_array    0x080ee680        0x4 libmsg_gen.a(mavlink_log.cpp.obj)
+ .init_array    0x080ee684        0x4 libmsg_gen.a(mc_att_ctrl_status.cpp.obj)
+ .init_array    0x080ee688        0x4 libmsg_gen.a(mc_virtual_attitude_setpoint.cpp.obj)
+ .init_array    0x080ee68c        0x4 libmsg_gen.a(mc_virtual_rates_setpoint.cpp.obj)
+ .init_array    0x080ee690        0x4 libmsg_gen.a(mission.cpp.obj)
+ .init_array    0x080ee694        0x4 libmsg_gen.a(mission_result.cpp.obj)
+ .init_array    0x080ee698        0x4 libmsg_gen.a(mount_orientation.cpp.obj)
+ .init_array    0x080ee69c        0x4 libmsg_gen.a(multirotor_motor_limits.cpp.obj)
+ .init_array    0x080ee6a0        0x4 libmsg_gen.a(offboard_control_mode.cpp.obj)
+ .init_array    0x080ee6a4        0x4 libmsg_gen.a(optical_flow.cpp.obj)
+ .init_array    0x080ee6a8        0x4 libmsg_gen.a(output_pwm.cpp.obj)
+ .init_array    0x080ee6ac        0x4 libmsg_gen.a(parameter_update.cpp.obj)
+ .init_array    0x080ee6b0        0x4 libmsg_gen.a(position_setpoint.cpp.obj)
+ .init_array    0x080ee6b4        0x4 libmsg_gen.a(position_setpoint_triplet.cpp.obj)
+ .init_array    0x080ee6b8        0x4 libmsg_gen.a(pwm_input.cpp.obj)
+ .init_array    0x080ee6bc        0x4 libmsg_gen.a(qshell_req.cpp.obj)
+ .init_array    0x080ee6c0        0x4 libmsg_gen.a(rc_channels.cpp.obj)
+ .init_array    0x080ee6c4        0x4 libmsg_gen.a(rc_parameter_map.cpp.obj)
+ .init_array    0x080ee6c8        0x4 libmsg_gen.a(safety.cpp.obj)
+ .init_array    0x080ee6cc        0x4 libmsg_gen.a(satellite_info.cpp.obj)
+ .init_array    0x080ee6d0        0x4 libmsg_gen.a(sensor_accel.cpp.obj)
+ .init_array    0x080ee6d4        0x4 libmsg_gen.a(sensor_baro.cpp.obj)
+ .init_array    0x080ee6d8        0x4 libmsg_gen.a(sensor_combined.cpp.obj)
+ .init_array    0x080ee6dc        0x4 libmsg_gen.a(sensor_correction.cpp.obj)
+ .init_array    0x080ee6e0        0x4 libmsg_gen.a(sensor_gyro.cpp.obj)
+ .init_array    0x080ee6e4        0x4 libmsg_gen.a(sensor_mag.cpp.obj)
+ .init_array    0x080ee6e8        0x4 libmsg_gen.a(sensor_preflight.cpp.obj)
+ .init_array    0x080ee6ec        0x4 libmsg_gen.a(servorail_status.cpp.obj)
+ .init_array    0x080ee6f0        0x4 libmsg_gen.a(subsystem_info.cpp.obj)
+ .init_array    0x080ee6f4        0x4 libmsg_gen.a(system_power.cpp.obj)
+ .init_array    0x080ee6f8        0x4 libmsg_gen.a(task_stack_info.cpp.obj)
+ .init_array    0x080ee6fc        0x4 libmsg_gen.a(tecs_status.cpp.obj)
+ .init_array    0x080ee700        0x4 libmsg_gen.a(telemetry_status.cpp.obj)
+ .init_array    0x080ee704        0x4 libmsg_gen.a(test_motor.cpp.obj)
+ .init_array    0x080ee708        0x4 libmsg_gen.a(time_offset.cpp.obj)
+ .init_array    0x080ee70c        0x4 libmsg_gen.a(transponder_report.cpp.obj)
+ .init_array    0x080ee710        0x4 libmsg_gen.a(uavcan_parameter_request.cpp.obj)
+ .init_array    0x080ee714        0x4 libmsg_gen.a(uavcan_parameter_value.cpp.obj)
+ .init_array    0x080ee718        0x4 libmsg_gen.a(ulog_stream.cpp.obj)
+ .init_array    0x080ee71c        0x4 libmsg_gen.a(ulog_stream_ack.cpp.obj)
+ .init_array    0x080ee720        0x4 libmsg_gen.a(vehicle_attitude.cpp.obj)
+ .init_array    0x080ee724        0x4 libmsg_gen.a(vehicle_attitude_setpoint.cpp.obj)
+ .init_array    0x080ee728        0x4 libmsg_gen.a(vehicle_command_ack.cpp.obj)
+ .init_array    0x080ee72c        0x4 libmsg_gen.a(vehicle_command.cpp.obj)
+ .init_array    0x080ee730        0x4 libmsg_gen.a(vehicle_control_mode.cpp.obj)
+ .init_array    0x080ee734        0x4 libmsg_gen.a(vehicle_force_setpoint.cpp.obj)
+ .init_array    0x080ee738        0x4 libmsg_gen.a(vehicle_global_position.cpp.obj)
+ .init_array    0x080ee73c        0x4 libmsg_gen.a(vehicle_global_velocity_setpoint.cpp.obj)
+ .init_array    0x080ee740        0x4 libmsg_gen.a(vehicle_gps_position.cpp.obj)
+ .init_array    0x080ee744        0x4 libmsg_gen.a(vehicle_land_detected.cpp.obj)
+ .init_array    0x080ee748        0x4 libmsg_gen.a(vehicle_local_position.cpp.obj)
+ .init_array    0x080ee74c        0x4 libmsg_gen.a(vehicle_local_position_setpoint.cpp.obj)
+ .init_array    0x080ee750        0x4 libmsg_gen.a(vehicle_rates_setpoint.cpp.obj)
+ .init_array    0x080ee754        0x4 libmsg_gen.a(vehicle_roi.cpp.obj)
+ .init_array    0x080ee758        0x4 libmsg_gen.a(vehicle_status.cpp.obj)
+ .init_array    0x080ee75c        0x4 libmsg_gen.a(vehicle_status_flags.cpp.obj)
+ .init_array    0x080ee760        0x4 libmsg_gen.a(vtol_vehicle_status.cpp.obj)
+ .init_array    0x080ee764        0x4 libmsg_gen.a(wind_estimate.cpp.obj)
+                0x080ee768                _einit = ABSOLUTE (.)
 
-__param         0x080eeb68     0x289c
-                0x080eeb68                __param_start = ABSOLUTE (.)
+__param         0x080ee768     0x289c
+                0x080ee768                __param_start = ABSOLUTE (.)
  *(__param*)
- __param        0x080eeb68     0x289c src/modules/param/libmodules__param.a(px4_parameters.c.obj)
-                0x080eeb68                px4_parameters
-                0x080f1404                __param_end = ABSOLUTE (.)
+ __param        0x080ee768     0x289c src/modules/param/libmodules__param.a(px4_parameters.c.obj)
+                0x080ee768                px4_parameters
+                0x080f1004                __param_end = ABSOLUTE (.)
 
 .ARM.extab
  *(.ARM.extab*)
-                0x080f1404                __exidx_start = ABSOLUTE (.)
+                0x080f1004                __exidx_start = ABSOLUTE (.)
 
-.ARM.exidx      0x080f1404        0x8
+.ARM.exidx      0x080f1004        0x8
  *(.ARM.exidx*)
- .ARM.exidx     0x080f1404        0x8 /home/vtol/gcc-arm-none-eabi-5_4-2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu/libgcc.a(_udivmoddi4.o)
-                0x080f140c                __exidx_end = ABSOLUTE (.)
-                0x080f140c                _eronly = ABSOLUTE (.)
+ .ARM.exidx     0x080f1004        0x8 /home/vtol/gcc-arm-none-eabi-5_4-2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu/libgcc.a(_udivmoddi4.o)
+                0x080f100c                __exidx_end = ABSOLUTE (.)
+                0x080f100c                _eronly = ABSOLUTE (.)
 
-.rel.dyn        0x080f140c        0x0
- .rel.iplt      0x080f140c        0x0 src/firmware/nuttx/CMakeFiles/firmware_nuttx.dir/builtin_commands.c.obj
+.rel.dyn        0x080f100c        0x0
+ .rel.iplt      0x080f100c        0x0 src/firmware/nuttx/CMakeFiles/firmware_nuttx.dir/builtin_commands.c.obj
 
-.data           0x20000000     0x1570 load address 0x080f140c
+.data           0x20000000     0x1570 load address 0x080f100c
                 0x20000000                _sdata = ABSOLUTE (.)
  *(.data .data.*)
  .data._ZN7mpu600011bus_optionsE
@@ -26066,10 +26066,10 @@ __param         0x080eeb68     0x289c
  *(.gnu.linkonce.d.*)
                 0x20001570                _edata = ABSOLUTE (.)
 
-.igot.plt       0x20001570        0x0 load address 0x080f297c
+.igot.plt       0x20001570        0x0 load address 0x080f257c
  .igot.plt      0x20001570        0x0 src/firmware/nuttx/CMakeFiles/firmware_nuttx.dir/builtin_commands.c.obj
 
-.bss            0x20001600     0x47a4 load address 0x080f297c
+.bss            0x20001600     0x47a4 load address 0x080f257c
                 0x20001600                _sbss = ABSOLUTE (.)
  *(.bss .bss.*)
  .bss._ZN12_GLOBAL__N_15g_adcE
