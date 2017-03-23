@@ -92,8 +92,6 @@ then
 
     param set PWM_AUX_REV1    1
     param set PWM_AUX_REV2    1
-    param set PWM_AUX_REV3    1
-    param set PWM_AUX_REV4    1
 
     param set PWM_MIN 950
 
@@ -104,7 +102,7 @@ set MIXER vtol_rvjet_y4
 set PWM_OUT 1234
 
 set MIXER_AUX vtol_delta
-set PWM_ACHDIS 5
+set PWM_ACHDIS 3
 set PWM_AUX_DISARMED 950
 
 set MAV_TYPE 22
