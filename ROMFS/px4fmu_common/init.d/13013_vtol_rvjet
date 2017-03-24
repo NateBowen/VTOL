@@ -21,7 +21,7 @@ then
 
     param set VT_TYPE 2
     param set VT_MOT_COUNT 4
-    param set VT_IDLE_PWM_MC 990
+    param set VT_IDLE_PWM_MC 925
     param set MAV_TYPE    22
     param set VT_ARSP_TRANS   8.0
     param set VT_B_TRANS_DUR  4.0
@@ -93,7 +93,7 @@ then
     param set PWM_AUX_REV1    1
     param set PWM_AUX_REV2    1
 
-    param set PWM_MIN 950
+    param set PWM_MIN 925
 
 fi
 
