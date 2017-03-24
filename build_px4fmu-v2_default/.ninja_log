@@ -1622,3 +1622,15 @@
 586	826	0	src/firmware/nuttx/firmware_nuttx	52d57fa9f23a3090
 826	937	0	src/firmware/nuttx/px4fmu-v2_default.px4	1a03a7c5a7ea6bb2
 826	937	0	src/firmware/nuttx/firmware_nuttx.bin	1a03a7c5a7ea6bb2
+231	2320	0	src/systemcmds/ver/CMakeFiles/systemcmds__ver.dir/ver.c.obj	445ead0d1cd0b3d5
+2340	2842	0	src/systemcmds/ver/libsystemcmds__ver.a	497f01931ce061bf
+2842	3800	0	build_git_version.h	b721d1ee5de0ca7a
+3800	5280	0	src/lib/version/CMakeFiles/lib__version.dir/version.c.obj	1627e2e2358c9cb1
+5280	5508	0	src/lib/version/liblib__version.a	1e008958d2a06d7e
+217	5888	0	src/systemcmds/hardfault_log/CMakeFiles/systemcmds__hardfault_log.dir/hardfault_log.c.obj	1bf705a99e7a17c6
+5889	6081	0	src/systemcmds/hardfault_log/libsystemcmds__hardfault_log.a	d61b1edac53c1d01
+5508	8771	0	src/firmware/nuttx/romfs.o	ed1e2f4c03589762
+8771	8889	0	src/firmware/nuttx/libromfs.a	4874ee5fd0cd8504
+8889	12138	0	src/firmware/nuttx/firmware_nuttx	52d57fa9f23a3090
+12138	13548	0	src/firmware/nuttx/px4fmu-v2_default.px4	1a03a7c5a7ea6bb2
+12138	13548	0	src/firmware/nuttx/firmware_nuttx.bin	1a03a7c5a7ea6bb2
